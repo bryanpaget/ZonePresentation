@@ -56,7 +56,7 @@ footer: "Statistics Canada | Statistique Canada"
 
 <!-- Best Practices -->
 ## Best Practices
-
+![bg right:33%](./data-science-bg.png)
 ### Optimizing Your Workflow
 - **Start Small**: Scale resources as needed to control costs
 - **Smart Data**: Use databases instead of copying data
@@ -66,7 +66,7 @@ footer: "Statistics Canada | Statistique Canada"
 
 <!-- Tools & Environments -->
 ## Tools & Environments
-
+![bg right:33%](./kubernetes-log.png)
 ### Development Options
 - **JupyterLab**: Interactive computing with rich visualizations
 - **RStudio**: Dedicated R environment with statistical tools
@@ -76,7 +76,7 @@ footer: "Statistics Canada | Statistique Canada"
 
 <!-- SAS Support -->
 ## SAS Support
-
+![bg right:33%](./sas-logo.png)
 ### Transition to Open Source
 - **Built-in Compatibility**: Run SAS code without expensive licenses
 - **Cost Savings**: Reduce licensing fees while preserving investments
