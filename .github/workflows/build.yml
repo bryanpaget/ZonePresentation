@@ -56,3 +56,44 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  release:
+    needs: publish
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages
+          path: public
+          
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: The Zone Presentation v${{ github.run_number }}
+          body: |
+            Automated release of The Zone presentation slides.
+            
+            This release was created from commit: ${{ github.sha }}
+            
+            ## Files
+            - **slides.pdf**: The presentation in PDF format
+          draft: false
+          prerelease: false
+          
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./public/slides.pdf
+          asset_name: The-Zone-Presentation.pdf
+          asset_content_type: application/pdf
