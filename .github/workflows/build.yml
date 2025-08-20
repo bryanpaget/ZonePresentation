@@ -16,16 +16,29 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         
-      - name: Convert Markdown into HTML and PDF
-        uses: KoharaKazuya/marp-cli-action@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          input-file: slides.md
-          output-dir: public
-          html: true
-          pdf: true
-          allow-local-files: true
-          config-file: marp-config.yml
+          node-version: '18'
           
+      - name: Install Marp CLI
+        run: npm install -g @marp-team/marp-cli
+        
+      - name: Create public directory
+        run: mkdir -p public
+        
+      - name: Convert Markdown to HTML
+        run: marp slides.md --html -o public/index.html --config-file marp-config.yml --allow-local-files
+        
+      - name: Convert Markdown to PDF
+        run: marp slides.md --pdf -o public/slides.pdf --config-file marp-config.yml --allow-local-files
+        
+      - name: Copy images to public directory
+        run: cp *.png public/ 2>/dev/null || true
+        
+      - name: List generated files
+        run: ls -la public/
+        
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
