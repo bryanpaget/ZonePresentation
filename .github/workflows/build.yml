@@ -1,3 +1,11 @@
+name: Deploy Marp Slides to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
 jobs:
   publish:
     environment:
@@ -5,14 +13,27 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
       - name: Convert Markdown into HTML and PDF
         uses: KoharaKazuya/marp-cli-action@v4
-
+        with:
+          input-file: slides.md
+          output-dir: public
+          html: true
+          pdf: true
+          allow-local-files: true
+          config-file: marp-config.yml
+          
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-
+        with:
+          path: public
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
