@@ -1,12 +1,3 @@
----
-marp: true
-theme: default
-size: 16:9
-paginate: true
-header: ""
-footer: "Statistics Canada | Statistique Canada"
----
-
 <!-- Title Slide -->
 # The Zone: A Modern Data Science Platform
 
