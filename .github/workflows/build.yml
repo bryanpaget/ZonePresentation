@@ -3,16 +3,8 @@ name: Deploy Marp Slides to GitHub Pages
 on:
   push:
     branches: [ main ]
-    paths: 
-      - 'slides.md'
-      - 'marp-config.yml'
-      - '*.png'
   pull_request:
     branches: [ main ]
-    paths: 
-      - 'slides.md'
-      - 'marp-config.yml'
-      - '*.png'
 
 # Set permissions for the job
 permissions:
@@ -34,43 +26,24 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
           
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
         
-      - name: Clean public directory
-        run: |
-          rm -rf public
-          mkdir -p public
+      - name: Create public directory
+        run: mkdir -p public
         
       - name: Convert Markdown to HTML
-        run: |
-          marp slides.md --html -o public/index.html --config-file marp-config.yml --allow-local-files
-          echo "HTML conversion completed"
+        run: marp slides.md --html -o public/index.html --config-file marp-config.yml --allow-local-files
         
       - name: Convert Markdown to PDF
-        run: |
-          marp slides.md --pdf -o public/slides.pdf --config-file marp-config.yml --allow-local-files
-          echo "PDF conversion completed"
+        run: marp slides.md --pdf -o public/slides.pdf --config-file marp-config.yml --allow-local-files
         
       - name: Copy images to public directory
-        run: |
-          cp *.png public/ 2>/dev/null || true
-          echo "Images copied"
+        run: cp *.png public/ 2>/dev/null || true
         
-      - name: Verify generated files
-        run: |
-          echo "Generated files:"
-          ls -la public/
-          if [ ! -f "public/index.html" ]; then
-            echo "Error: index.html not generated"
-            exit 1
-          fi
-          if [ ! -f "public/slides.pdf" ]; then
-            echo "Error: slides.pdf not generated"
-            exit 1
-          fi
+      - name: List generated files
+        run: ls -la public/
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -83,9 +56,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        
-      - name: Deployment Status
-        if: always()
-        run: |
-          echo "Deployment status: ${{ job.status }}"
-          echo "Visit your site at: ${{ steps.deployment.outputs.page_url }}"
