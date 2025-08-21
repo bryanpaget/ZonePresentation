@@ -103,4 +103,4 @@
 - **Access**: https://zone.statcan.gc.ca with enterprise credentials
 - **Training**: Explore our documentation and workshops
 - **Feedback**: Help shape the platform's evolution
-*Empower your data science journey with open source innovation*
+*Empower your data science journey with open source innovation*>
