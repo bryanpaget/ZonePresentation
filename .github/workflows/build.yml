@@ -37,7 +37,7 @@ jobs:
         run: marp slides.md --pdf -o public/slides.pdf --config-file marp-config.yml --allow-local-files
         
       - name: Copy images to public directory
-        run: cp ./img/*.png public/ 2>/dev/null || true
+        run: cp ./*.png public/ 2>/dev/null || true
         
       - name: List generated files
         run: ls -la public/

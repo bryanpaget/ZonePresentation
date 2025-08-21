@@ -1,13 +1,13 @@
 <!-- Title Slide -->
 # The Zone: A Modern Data Science Platform
-![bg right:33%](./img/1755722468.png)
+![bg right:33%](./1755722468.png)
 ### Empowering Citizen Developers with Open Source
 *Transforming how we approach data science*
 
 ---
 <!-- What is The Zone? -->
 ## What is The Zone?
-![bg right:33%](./img/1755784040.png)
+![bg right:33%](./1755784040.png)
 ### Your Integrated Data Science Hub
 - **Unified environment**: JupyterLab, RStudio, VS Code in one platform
 - **Multi-language support**: Julia, Python, R, and SAS compatibility
@@ -18,7 +18,7 @@
 ---
 <!-- Key Benefits -->
 ## Key Benefits
-![bg right:33%](./img/1755784100.png)
+![bg right:33%](./1755784100.png)
 ### Why Choose The Zone?
 - **Cost Efficiency**: Pay only for resources you use - create notebook servers sized to your needs
 - **Flexibility**: Scale workspaces dynamically for high-performance tasks and large datasets
@@ -28,7 +28,7 @@
 ---
 <!-- What is Kubeflow? -->
 ## What is Kubeflow?
-![bg right:33%](./img/1755784137.png)
+![bg right:33%](./1755784137.png)
 ### The Engine Powering The Zone
 - **Container-based workflows**: Streamlined system on Kubernetes
 - **Simplified operations**: Easy environment creation and experiment tracking
@@ -38,7 +38,7 @@
 ---
 <!-- Access & Status -->
 ## Access & Status
-![bg right:33%](./img/1755784327.png)
+![bg right:33%](./1755784327.png)
 ### Platform Adoption & Performance
 - **Access**: https://zone.statcan.gc.ca (enterprise credentials required)
 - **Community**: 2,000+ active users, 120+ daily concurrent users
@@ -48,7 +48,7 @@
 ---
 <!-- Best Practices -->
 ## Best Practices
-![bg right:33%](./img/1755784367.png)
+![bg right:33%](./1755784367.png)
 ### Optimizing Your Workflow
 - **Start Small**: Scale resources incrementally to control costs
 - **Smart Data Management**: Connect directly to databases instead of copying data
@@ -58,7 +58,7 @@
 ---
 <!-- Tools & Environments -->
 ## Tools & Environments
-![bg right:33%](./img/1755784408.png)
+![bg right:33%](./1755784408.png)
 ### Your Development Toolkit
 - **JupyterLab**: Interactive computing with rich visualizations and notebooks
 - **RStudio**: Dedicated R environment with statistical tools and packages
@@ -68,7 +68,7 @@
 ---
 <!-- SAS Support -->
 ## SAS Support
-![bg right:33%](./img/1755784444.png)
+![bg right:33%](./1755784444.png)
 ### Bridging Legacy and Innovation
 - **Built-in Compatibility**: Run SAS code in JupyterLab alongside R and Python
 - **Seamless Migration**: Gradual transition path to modern open-source tools
@@ -78,7 +78,7 @@
 ---
 <!-- Limitations -->
 ## Limitations
-![bg right:33%](./img/1755784725.png)
+![bg right:33%](./1755784725.png)
 ### Challenges & Opportunities
 - **Legacy Systems**: Performance issues with old SMB shares (field filers are our top priority for improvement)
 - **Learning Curve**: Training resources available for containerized environments and CronJobs
@@ -88,7 +88,7 @@
 ---
 <!-- Future -->
 ## Future Roadmap
-![bg right:33%/](./img/1755784585.png)
+![bg right:33%/](./1755784585.png)
 ### Where We're Headed
 - **Pipeline Modernization**: Transitioning from CronJobs to Kubeflow Pipelines/ArgoWorkflows
 - **Enhanced Visualization**: New tools for sharing graphical analyses, including R Shiny and secure hosting
@@ -98,7 +98,7 @@
 ---
 <!-- Call to Action -->
 ## Get Started with The Zone
-![bg right:33%](./img/1755784585.png)
+![bg right:33%](./1755784585.png)
 ### Join Our Community
 - **Access**: https://zone.statcan.gc.ca with enterprise credentials
 - **Training**: Explore our documentation and workshops
