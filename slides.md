@@ -86,6 +86,7 @@
 - **Continuous Innovation**: Expanding capabilities based on your needs and feedback
 
 ---
+
 <!-- Call to Action -->
 ## Get Started with The Zone
 ![bg right:33%](./1755784585.png)
@@ -93,3 +94,7 @@
 - **Access**: https://zone.statcan.gc.ca with enterprise credentials
 - **Training**: Explore our documentation and workshops
 - **Feedback**: Help shape the platform's evolution
+
+---
+
+![](./pipelines.png)
