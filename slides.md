@@ -67,7 +67,7 @@
 ---
 
 ## The AAW had Kubeflow Pipelines
-![](./pipelines.png)
+![bg](./pipelines.png)
 
 ---
 
