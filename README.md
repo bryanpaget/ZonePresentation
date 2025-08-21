@@ -24,25 +24,6 @@ To view or edit the slides locally:
 npx @marp-team/marp-cli slides.md --preview
 ```
 
-## 📁 Repository Structure
-
-```
-├── .github/workflows/
-│   └── deploy.yml          # GitHub Action for deployment
-├── slides.md               # Main presentation file
-├── marp-config.yml         # Marp configuration
-├── canada.png              # Canada flag image
-├── kubeflow-logo.png       # Kubeflow logo
-├── kubernetes-logo.png     # Kubernetes logo
-├── sas-logo.png            # SAS logo
-├── data-science-bg.png     # Data science background
-├── dashboard-bg.png        # Dashboard background
-├── best-practices.png      # Best practices image
-├── tools-bg.png            # Tools background
-├── limitations-bg.png      # Limitations background
-└── future-bg.png           # Future background
-```
-
 ## 🛠️ Customization
 
 ### Editing Slides
@@ -70,7 +51,7 @@ To add new images:
 2. Reference them in the slides using Marp's image syntax:
 
 ```markdown
-![bg right:30%](your-image.png)
+![bg right:33%](your-image.png)
 ```
 
 ## 🔄 Deployment Process
@@ -84,29 +65,3 @@ This repository uses GitHub Actions to automatically convert and deploy the pres
 
 The deployment is triggered automatically when changes are pushed to the main branch.
 
-## 📊 Presentation Sections
-
-1. **Title Slide**: Introduction to The Zone
-2. **What is The Zone?**: Overview of the platform
-3. **Key Benefits**: Cost efficiency, flexibility, and open source advantages
-4. **What is Kubeflow?**: Explanation of the underlying technology
-5. **Access & Status**: How to access and current usage statistics
-6. **Best Practices**: Tips for optimizing workflow
-7. **Tools & Environments**: Available development environments
-8. **SAS Support**: Transitioning from SAS to open source
-9. **Limitations**: Current challenges and solutions
-10. **Future**: Planned enhancements and features
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📧 Contact
-
-For questions or suggestions, please open an issue in this repository.
