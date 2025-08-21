@@ -1,13 +1,13 @@
 <!-- Title Slide -->
 # The Zone: A Modern Data Science Platform
-![bg right:33%](./1755722468.png)
+![bg right:33%](./img/1755722468.png)
 ### Empowering Citizen Developers with Open Source
 
 ---
 
 <!-- What is The Zone? -->
 ## What is The Zone?
-![bg right:33%](./1755722468.png)
+![bg right:33%](./img/1755722468.png)
 ### Integrated Data Science Platform
 - Unified environment: JupyterLab, RStudio, VS Code
 - Multi-language support: Python, R, and SAS
@@ -17,7 +17,7 @@
 
 <!-- Key Benefits -->
 ## Key Benefits
-![bg right:33%](./1755722468.png)
+![bg right:33%](./img/1755722468.png)
 
 ### Why Choose The Zone?
 - **Cost Efficiency**: Pay only for resources you use
@@ -27,7 +27,7 @@
 
 <!-- What is Kubeflow? -->
 ## What is Kubeflow?
-![bg right:33%](./1755722468.png)
+![bg right:33%](./img/1755722468.png)
 ### The Engine Behind The Zone
 - Container-based workflow system on Kubernetes
 - Simplifies environment creation and experiment tracking
@@ -37,7 +37,7 @@
 
 <!-- Access & Status -->
 ## Access & Status
-![bg right:33%](./1755722468.png)
+![bg right:33%](./img/1755722468.png)
 ### Platform Adoption
 - **Access**: https://zone.statcan.gc.ca with enterprise credentials
 - **Users**: 2,000+ onboarded, 120+ concurrent daily
@@ -47,7 +47,7 @@
 
 <!-- Best Practices -->
 ## Best Practices
-![bg right:33%](./1755722468.png)
+![bg right:33%](./img/1755722468.png)
 ### Optimizing Your Workflow
 - **Start Small**: Scale resources as needed to control costs
 - **Smart Data**: Use databases instead of copying data
@@ -57,7 +57,7 @@
 
 <!-- Tools & Environments -->
 ## Tools & Environments
-![bg right:33%](./1755722468.png)
+![bg right:33%](./img/1755722468.png)
 ### Development Options
 - **JupyterLab**: Interactive computing with rich visualizations
 - **RStudio**: Dedicated R environment with statistical tools
@@ -67,7 +67,7 @@
 
 <!-- SAS Support -->
 ## SAS Support
-![bg right:33%](./1755722468.png)
+![bg right:33%](./img/1755722468.png)
 ### Transition to Open Source
 - **Built-in Compatibility**: Run SAS code without expensive licenses
 - **Cost Savings**: Reduce licensing fees while preserving investments
@@ -77,7 +77,7 @@
 
 <!-- Limitations -->
 ## Limitations
-![bg right:33%](./1755722468.png)
+![bg right:33%](./img/1755722468.png)
 ### Current Challenges
 - **Legacy Systems**: Performance issues with old SMB shares
 - **Learning Curve**: Training needed for containerized environments
@@ -87,7 +87,7 @@
 
 <!-- Future -->
 ## Future
-![bg right:33%](./1755722468.png)
+![bg right:33%](./img/1755722468.png)
 ### Platform Evolution
 - **Pipeline Modernization**: Transforming cronjobs into Kubeflow Pipelines
 - **Enhanced Visualization**: New tools for sharing graphical analysis
