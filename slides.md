@@ -79,7 +79,7 @@
 ---
 <!-- Future -->
 ## Future Roadmap
-![bg right:33%/](./1755784535.png)
+![bg right:33%](./1755784535.png)
 ### Where We're Headed
 - **Pipeline Modernization**: Transitioning from CronJobs to Kubeflow Pipelines/ArgoWorkflows
 - **Enhanced Visualization**: New tools for sharing graphical analyses, including R Shiny and secure hosting
