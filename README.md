@@ -1,19 +1,17 @@
 # The Zone: A Modern Data Science Platform  
 *Secure. Unified. Scalable.*
 
-![](./zone-0.png)
+<img src="./zone-1.png" width="320">
 
-### What You Need to Know
-
-#### One Platform for All Data Science Work
+## One Platform for All Data Science Work
 
 The Zone brings together **Python, R, SAS, and more** in a single, secure environment built on **Kubeflow and Azure AKS**. Whether you're running notebooks, automating jobs, or building models, everything lives in one place, **no more silos, no more friction**.
 
-#### Unique Bridge from Legacy to Future
+## Unique Bridge from Legacy to Future
 
 It's the **only platform at StatCan where SAS and open source coexist**. This means teams can protect their investments in legacy code while safely adopting modern tools and practices, all within a Protected B environment.
 
-#### Built to Scale Across Teams and Organizations
+## Built to Scale Across Teams and Organizations
 
 We've already **proven portability** by cloning and migrating from AAW to The Zone. Now, we're paving the way for a **federated future**: one open, reusable platform that can be securely adopted by departments across government, **same foundation, different domains**.
 
