@@ -8,7 +8,7 @@
 ---
 <!-- Our Story -->
 ## Our Story: One Zone, Two Zones, Many?
-![bg right:33%](./zone-0.png)
+![bg right:33%](./zone-2.png)
 ### The AAW Was the First Zone
 - Same core: **Kubeflow on Kubernetes**
 - AAW = Zone 1: external, open, innovative
@@ -17,7 +17,7 @@
 ---
 <!-- What is The Zone? -->
 ## The Zone Is Kubeflow
-![bg right:33%](./zone-0.png)
+![bg right:33%](./zone-2.png)
 ### One Platform. Every Workflow.
 - Running on **Azure AKS**
 - Kubeflow: a data scientist-friendly layer on Kubernetes
@@ -26,7 +26,7 @@
 ---
 <!-- Inclusivity -->
 ## Everyone is Welcome
-![bg right:33%](./zone-0.png)
+![bg right:33%](./zone-2.png)
 ### Language? No Barrier.
 - Python, R, Julia, SAS, all supported
 - Multilingual Jupyter kernels
@@ -39,7 +39,7 @@
 ---
 <!-- SAS Migration -->
 ## SAS to Open Source
-![bg right:33%](./zone-0.png)
+![bg right:33%](./zone-3.png)
 ### Bridging the Gap
 - Only platform at StatCan where **SAS + Python/R coexist**
 - Protect investments in legacy code
@@ -47,7 +47,7 @@
 ---
 <!-- Platform Strengths -->
 ## What We've Built
-![bg right:33%](./zone-1.png)
+![bg right:33%](./zone-3.png)
 ### Real Adoption, Real Impact
 - 2,200+ users
 - 130+ daily notebooks
@@ -55,7 +55,7 @@
 ---
 <!-- Summer 2025 -->
 ## Summer 2025: Stronger, Smarter, Safer
-![bg right:33%](./zone-2.png)
+![bg right:33%](./zone-3.png)
 ### We didn't just maintain, we evolved.
 - **MKL acceleration**: faster math, faster models
 - **Tesseract OCR**: unlock scanned documents
@@ -64,7 +64,7 @@
 ---
 <!-- Portability -->
 ## Proven Portability
-![bg right:33%](././zone-3.png)
+![bg right:33%](./zone-4.png)
 ### We've Already Moved The Zone
 - Cloned AAW (Zone 1) to The Zone (Zone 2)
 - Migrated workloads, users, and workflows
@@ -80,7 +80,7 @@
 ---
 <!-- Future: Kubeflow Pipelines -->
 ## Future: MLOps at Scale
-![bg right:33%](./zone-3.png)
+![bg right:33%](./zone-4.png)
 ### End-to-End Workflows
 - Data → Model → Deployment
 - Reproducible, versioned, monitored
@@ -88,7 +88,7 @@
 ---
 <!-- Data Access -->
 ## Connect. Share. Scale.
-![bg right:33%](./zone-2.png)
+![bg right:33%](./zone-1.png)
 ### Breaking Down Barriers
 - Improved network model required
 - Today: adding databases is slow (network gatekeeping)
@@ -109,7 +109,7 @@
 ---
 <!-- Call to Action -->
 ## Join the Revolution
-![bg right:33%](./zone-0.png)
+![bg right:33%](./zone-1.png)
 ### Everyone is Welcome
 - Access: https://zone.statcan.ca  
 - Training & workshops
