@@ -13,7 +13,7 @@ The Zone brings together **Python, R, SAS, and more** in a single, secure enviro
 
 It's the **only platform at StatCan where SAS and open source coexist**. This means teams can protect their investments in legacy code while safely adopting modern tools and practices, all within a Protected B environment.
 
-#### Built to Scale — Across Teams and Organizations
+#### Built to Scale Across Teams and Organizations
 
 We've already **proven portability** by cloning and migrating from AAW to The Zone. Now, we're paving the way for a **federated future**: one open, reusable platform that can be securely adopted by departments across government, **same foundation, different domains**.
 
