@@ -1,112 +1,122 @@
 <!-- Title Slide -->
 # The Zone: A Modern Data Science Platform
 ![bg right:33%](./1755722468.png)
-### Enabling Innovation Through Open Source
-- Small team, big hearts, big impact
-- Power of open source
-- Efficient, affordable analytics
-
+### Everyone is Welcome
+- All languages: Python, R, SAS, and more
+- All teams: analysts, devs, data scientists
+- Open, secure, and ready to scale
 ---
-
 <!-- Our Story -->
-## Our Journey
+## Our Story: One Zone, Two Zones, Many?
 ![bg right:33%](./1755784444.png)
-### From Vision to Reality
-- Evolution: The Advanced Analytics Workspace to The Zone
-- Born for Protected B analytics
-- SAS to Open Source enabler
-
+### The AAW Was the First Zone
+- Same core: **Kubeflow on Kubernetes**
+- AAW = Zone 1: external, open, innovative
+- The Zone = Zone 2: internal, more secure, Protected B
+- We **cloned and migrated**, proving portability
 ---
+<!-- What is The Zone? -->
+## The Zone Is Kubeflow
+![bg right:33%](./1755784100.png)
+### One Platform. Every Workflow.
+- Running on **Azure AKS**
+- Kubeflow: a data scientist-friendly layer on Kubernetes
+- Notebooks, jobs, pipelines, all in one place
+- **Runs anywhere** — public cloud, private cluster, sovereign infrastructure
+---
+<!-- Inclusivity -->
+## Everyone is Welcome
+![bg right:33%](./1755784444.png)
+### Language? No Barrier.
+- Python, R, Julia, SAS, all supported
+- Multilingual Jupyter kernels
+- Migrate at your pace, in your language
 
+### Organization? No Barrier.
+- Open source = **cloneable, shareable, federatable**
+- We've already done it once
+- Ready to do it again — for other teams, other departments
+---
 <!-- SAS Migration -->
-## SAS Migration
+## SAS to Open Source
 ![bg right:33%](./1755784444.png)
-### Bridging Worlds
-- SAS alongside Python/R
-- JupyterLab's multilingual kernel support
-- Only platform enabling this transition
-
+### Bridging the Gap
+- Only platform at StatCan where **SAS + Python/R coexist**
+- Protect investments in legacy code
+- Grow into open source, together
 ---
-
-<!-- Platform Capabilities -->
-## Platform Strengths
+<!-- Platform Strengths -->
+## What We've Built
 ![bg right:33%](./1755784100.png)
-### Foundation for Innovation
-- Unified environment
-- 2,200+ registered users
-- 120+ daily notebooks
-
+### Real Adoption, Real Impact
+- 2,200+ users
+- 130+ daily notebooks
+- CronJobs powering real workflows
 ---
-<!-- Technical Expertise -->
-## Our Team
-![bg right:33%](./1755784100.png)
-### Kubernetes Experts
-- CKAD-certified engineers
-- Pursuing CKA certification
-- Kubeflow is our interface to Kubernetes
-
----
-<!-- Summer Achievements -->
-## Summer Progress
+<!-- Summer 2025 -->
+## Summer 2025: Stronger, Smarter, Safer
 ![bg right:33%](./1755784535.png)
-### Recent Enhancements
-- MKL for accelerated computing
-- Tesseract OCR integration
-- Volume Cleaner
-
+### We didn't just maintain, we evolved.
+- ✅ **MKL acceleration**: faster math, faster models
+- ✅ **Tesseract OCR**: unlock scanned documents
+- ✅ **Volume & Namespace Cleaners**: automatic resource cleanup
+- ✅ **Pipeline-ready infrastructure**: one step from CronJobs to Pipelines
 ---
+<!-- Portability -->
+## Proven Portability
+![bg right:33%](./1755784367.png)
+### We've Already Moved The Zone
+- Cloned AAW (Zone 1) to The Zone (Zone 2)
+- Migrated workloads, users, and workflows
+- Now moving to an **even more secure cloud environment**
 
-<!-- Future: Kubeflow -->
-## Future: Advanced Workflows
-![bg right:33%](./1755784535.png)
-### Releasing Kubernetes Power
-- Beyond CronJobs to Kubeflow Pipelines
-- End-to-end ML pipelines
-- Scalable, reproducible workflows
-
+➡️ If we can do it twice, we can do it **n times**.
 ---
-
-## The AAW had Kubeflow Pipelines
+<!-- From Cron to Pipeline -->
+## From CronJobs to Pipelines
 ![bg](./pipelines.png)
-
+### One Step Away
+- Today: scheduled scripts
+- Tomorrow: **connected, observable workflows**
+- Pipelines = jobs in sequence, with logs, retries, triggers
 ---
-
-<!-- Future: Data Access -->
-## Future: Enhanced Connectivity
+<!-- Future: Kubeflow Pipelines -->
+## Future: MLOps at Scale
+![bg right:33%](./1755784535.png)
+### End-to-End Workflows
+- Data → Model → Deployment
+- Reproducible, versioned, monitored
+- CI/CD for data science
+---
+<!-- Data Access -->
+## Connect. Share. Scale.
 ![bg right:33%](./1755784408.png)
-### Breaking Down Data Silos
-- Simplified database connections
-- Integration
-- Sharing
+### Breaking Down Barriers
+- Improved network model required
+- Today: adding databases is slow (network gatekeeping)
+- Missing tools: better VS Code extension repo
+- Need org-wide secrets management (e.g. Keycloak)
 
+➡️ **Our goal**: frictionless, secure data access for all
 ---
+<!-- Federated Future -->
+## A Federated Future
+![bg right:33%](./1755784408.png)
+### One Platform. Many Zones.
+- The Zone is **open source and reusable**
+- We've already cloned it once, we can do it again
+- Imagine:  
+  - **Health Canada** with their own Zone  
+  - **ESDC**, **ISED**, **DND** — each sovereign, secure, self-managed
 
-<!-- Future: Efficiency -->
-## Future: Platform Efficiency
-![bg right:33%](./1755784367.png)
-### Optimizing Resources
-- Namespace Cleaner
-- Code optimizations
-- 
-
+> Same foundation. Same best practices.  
+> Different domains. Shared vision.
 ---
-
-<!-- Best Practices -->
-## Optimization Principles
-![bg right:33%](./1755784367.png)
-### Maximizing Value
-- Start small, scale as needed
-- Connect directly to data
-- Build modular, pipeline-ready code
-- Version everything
-
----
-
-<!-- Access & Next Steps -->
-## Join the Evolution
+<!-- Call to Action -->
+## Join the Revolution
 ![bg right:33%](./1755784585.png)
-### Get Started Today
-- Access: https://zone.statcan.gc.ca
-- Training & workshops available
-- Help shape our future
-- Join our growing community
+### Everyone is Welcome
+- Access: https://zone.statcan.ca  
+- Training & workshops
+- Help shape the future
+- **You could host the next Zone.**
