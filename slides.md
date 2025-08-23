@@ -1,6 +1,6 @@
 <!-- Title Slide -->
 # The Zone: A Modern Data Science Platform
-![bg right:33%](./1755722468.png)
+![bg right:33%](./zone-1.png)
 ### Everyone is Welcome
 - All languages: Python, R, SAS, and more
 - All teams: analysts, devs, data scientists
