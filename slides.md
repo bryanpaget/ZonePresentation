@@ -2,24 +2,19 @@
 # The Zone  
 ## A Modern Data Science Platform for Statistics Canada
 
-![bg right:33%](./zone-0.png)
+![bg right:24%](./zone-0.png)
 
 ---
 
 <!-- Who We Are -->
 ## The Zone Team – Summer 2025
 
-![bg right:33%](./zone-0.png)
+![bg right:24%](./zone-0.png)
 
 We are the team building and supporting The Zone:
 
-- Souheil  
-- Justin  
-- Anray  
-- Bryan  
-- Mathis  
-- Jose  
-- Wendy
+- Souheil, Mathis, Jose, Wendy, Bryan
+- Summer Co-op Students: Justin and Anray  
 
 We are developers, data engineers, and platform advocates committed to open, secure, and sovereign data infrastructure for government.
 
@@ -30,10 +25,10 @@ We are developers, data engineers, and platform advocates committed to open, sec
 <!-- Our Story / History -->
 ## Our Story: One Platform, Two Zones
 
-![bg right:33%](./zone-1.png)
+![bg right:24%](./zone-1.png)
 
-- The Advanced Analytics Workspace (AAW) was the first "Zone": external, open, innovative  
-- The Zone its secure, internal counterpart: hosted within StatCan, compliant with Protected B  
+- The Advanced Analytics Workspace (AAW) was the first Zone: meant for collaboration 
+- The Zone is its secure, internal counterpart, compliant with Protected B  
 - Built on the same foundation: **Kubeflow on Kubernetes**  
 - We successfully **cloned and migrated** AAW to The Zone, proving portability
 
@@ -44,7 +39,7 @@ We are developers, data engineers, and platform advocates committed to open, sec
 <!-- What is The Zone? -->
 ## What Is The Zone?
 
-![bg right:33%](./zone-1.png)
+![bg right:24%](./zone-1.png)
 
 The Zone is a data science platform based on **Kubeflow**, running on **Azure AKS**, designed to orchestrate notebooks, jobs, and machine learning workflows.
 
@@ -62,7 +57,7 @@ It provides:
 <!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
-![bg right:33%](./zone-2.png)
+![bg right:24%](./zone-2.png)
 
 ### Language? No Barrier.
 
@@ -86,7 +81,7 @@ It provides:
 <!-- Why Created -->
 ## Why Was The Zone Created?
 
-![bg right:33%](./zone-2.png)
+![bg right:24%](./zone-2.png)
 
 To deliver a secure, modern, and independent alternative to commercial and foreign-hosted data platforms.
 
@@ -102,7 +97,7 @@ To deliver a secure, modern, and independent alternative to commercial and forei
 <!-- Platform Strengths -->
 ## What We've Built
 
-![bg right:33%](./zone-3.png)
+![bg right:24%](./zone-3.png)
 
 - Over 2,200 users  
 - 130+ daily notebook sessions  
@@ -117,7 +112,7 @@ To deliver a secure, modern, and independent alternative to commercial and forei
 <!-- Summer 2025 -->
 ## Summer 2025: Stronger, Smarter, Safer
 
-![bg right:33%](./zone-3.png)
+![bg right:24%](./zone-3.png)
 
 We are evolving:
 
@@ -133,7 +128,7 @@ We are evolving:
 <!-- From Cron to Pipeline -->
 ## From CronJobs to Pipelines
 
-![bg right:33%](./zone-4.png)
+![bg right:24%](./zone-4.png)
 
 Today: scheduled scripts run in isolation.
 
@@ -151,7 +146,7 @@ Tomorrow: connected, observable workflows with:
 <!-- Future: Kubeflow Pipelines -->
 ## The Future: MLOps at Scale
 
-![bg right:33%](./zone-4.png)
+![bg right:24%](./zone-4.png)
 
 We are moving toward end-to-end reproducible workflows:
 
@@ -166,7 +161,7 @@ We are moving toward end-to-end reproducible workflows:
 <!-- Data Access -->
 ## Breaking Down Barriers
 
-![bg right:33%](./zone-4.png)
+![bg right:24%](./zone-4.png)
 
 Challenges remain:
 
@@ -182,7 +177,7 @@ Challenges remain:
 <!-- Portability & Federated Future -->
 ## A Federated Future
 
-![bg right:33%](./zone-0.png)
+![bg right:24%](./zone-0.png)
 
 The Zone is open source and designed to scale.
 
@@ -202,7 +197,7 @@ This is how we build a national platform: together.
 <!-- Call to Action -->
 ## Enter The Zone
 
-![bg right:33%](./zone-0.png)
+![bg right:24%](./zone-0.png)
 
 You are invited to:
 
