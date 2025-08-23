@@ -1,67 +1,30 @@
-# The Zone Presentation
+# The Zone: A Modern Data Science Platform  
+*Secure. Unified. Scalable.*
 
-This repository contains the presentation slides for "The Zone: A Modern Data Science Platform" built with Marp and automatically deployed to GitHub Pages.
+![](./zone-0.png)
 
-## 📋 Overview
+### What You Need to Know
 
-The presentation showcases The Zone, a Kubeflow-based data science platform that supports Python, R, and SAS within a unified environment. It highlights the platform's benefits, features, and future direction for business managers.
+#### One Platform for All Data Science Work
 
-## 🚀 Quick Start
+The Zone brings together **Python, R, SAS, and more** in a single, secure environment built on **Kubeflow and Azure AKS**. Whether you're running notebooks, automating jobs, or building models, everything lives in one place, **no more silos, no more friction**.
 
-### Viewing the Presentation
+#### Unique Bridge from Legacy to Future
 
-The presentation is automatically deployed to GitHub Pages and available at: [https://bryanpaget.github.io/ZonePresentation/](https://bryanpaget.github.io/ZonePresentation/)
+It's the **only platform at StatCan where SAS and open source coexist**. This means teams can protect their investments in legacy code while safely adopting modern tools and practices, all within a Protected B environment.
 
-### Local Development
+#### Built to Scale — Across Teams and Organizations
 
-To view or edit the slides locally:
+We've already **proven portability** by cloning and migrating from AAW to The Zone. Now, we're paving the way for a **federated future**: one open, reusable platform that can be securely adopted by departments across government, **same foundation, different domains**.
 
-1. Install [Marp CLI](https://github.com/marp-team/marp-cli)
-2. Clone this repository
-3. Run the following command to preview the slides:
+---
 
-```bash
-npx @marp-team/marp-cli slides.md --preview
-```
+> ✅ **2,200+ users**  
+> 🚀 **Pipeline-ready for MLOps at scale**  
+> 🔐 **Secure, sovereign, and open source**
 
-## 🛠️ Customization
+---
 
-### Editing Slides
-
-The presentation is written in Markdown using Marp syntax. To edit:
-
-1. Open `slides.md` in your favorite editor
-2. Modify the content as needed
-3. Commit and push changes to trigger automatic deployment
-
-### Styling
-
-The presentation uses a custom style defined in `marp-config.yml`. Key features include:
-
-- Navy blue header and footer with Statistics Canada branding
-- Red maple leaf in the footer
-- Consistent 16:9 aspect ratio
-- Custom background colors for different sections
-
-### Adding Images
-
-To add new images:
-
-1. Place image files in the root directory
-2. Reference them in the slides using Marp's image syntax:
-
-```markdown
-![bg right:33%](your-image.png)
-```
-
-## 🔄 Deployment Process
-
-This repository uses GitHub Actions to automatically convert and deploy the presentation:
-
-1. **Checkout**: The repository is checked out
-2. **Conversion**: Marp CLI converts the Markdown to HTML and PDF
-3. **Upload**: The generated files are uploaded as artifacts
-4. **Deploy**: The files are deployed to GitHub Pages
-
-The deployment is triggered automatically when changes are pushed to the main branch.
-
+## **Join the Future of Analytics at StatCan**  
+🔗 [https://zone.statcan.ca](https://zone.statcan.ca)  
+🚀 *You could host the next Zone.*
