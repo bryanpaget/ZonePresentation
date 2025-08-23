@@ -46,7 +46,7 @@
 - Grow into open source, together
 ---
 <!-- Platform Strengths -->
-## What We’ve Built
+## What We've Built
 ![bg right:33%](./1755784100.png)
 ### Real Adoption, Real Impact
 - 2,200+ users
@@ -65,7 +65,7 @@
 <!-- Portability -->
 ## Proven Portability
 ![bg right:33%](./1755784367.png)
-### We’ve Already Moved The Zone
+### We've Already Moved The Zone
 - Cloned AAW (Zone 1) to The Zone (Zone 2)
 - Migrated workloads, users, and workflows
 - Now moving to an **even more secure cloud environment**
