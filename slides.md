@@ -2,14 +2,14 @@
 # The Zone  
 ## A Modern Data Science Platform for Statistics Canada
 
-![bg right:33%](./zone-0.png)
+![bg right:30%](./zone-0.png)
 
 ---
 
 <!-- Who We Are -->
 ## The Zone Team – Summer 2025
 
-![bg right:33%](./zone-0.png)
+![bg right:30%](./zone-0.png)
 
 We are the team building and supporting The Zone:
 
@@ -21,7 +21,7 @@ We are the team building and supporting The Zone:
 <!-- Our Story / History -->
 ## Our Story: One Platform, Two Zones
 
-![bg right:33%](./zone-1.png)
+![bg right:30%](./zone-1.png)
 
 - The Advanced Analytics Workspace (AAW) was the first Zone
 - The Zone is its Protected B counterpart
@@ -35,7 +35,7 @@ We are the team building and supporting The Zone:
 <!-- What is The Zone? -->
 ## What Is The Zone?
 
-![bg right:33%](./zone-1.png)
+![bg right:30%](./zone-2.png)
 
 The Zone is a data science platform based on **Kubeflow**, running on **Azure AKS**, designed to orchestrate notebooks, jobs, and machine learning workflows.
 
@@ -53,7 +53,7 @@ It provides:
 <!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
-![bg right:33%](./zone-2.png)
+![bg right:30%](./zone-3.png)
 
 ### Language? No Barrier.
 
@@ -77,7 +77,7 @@ It provides:
 <!-- Why Created -->
 ## Why Was The Zone Created?
 
-![bg right:33%](./zone-2.png)
+![bg right:30%](./zone-4.png)
 
 To deliver a secure, modern, and independent alternative to commercial and foreign-hosted data platforms.
 
@@ -93,7 +93,7 @@ To deliver a secure, modern, and independent alternative to commercial and forei
 <!-- Platform Strengths -->
 ## What We've Built
 
-![bg right:33%](./zone-3.png)
+![bg right:30%](./zone-5.png)
 
 - Over 2,200 users  
 - 130+ daily notebook sessions  
@@ -108,7 +108,7 @@ To deliver a secure, modern, and independent alternative to commercial and forei
 <!-- Summer 2025 -->
 ## Summer 2025: Stronger, Smarter, Safer
 
-![bg right:33%](./zone-3.png)
+![bg right:30%](./zone-6.png)
 
 We are evolving:
 
@@ -124,7 +124,7 @@ We are evolving:
 <!-- From Cron to Pipeline -->
 ## From CronJobs to Pipelines
 
-![bg right:33%](./zone-4.png)
+![bg right:30%](./zone-7.png)
 
 Today: scheduled scripts run in isolation.
 
@@ -142,7 +142,7 @@ Tomorrow: connected, observable workflows powered by **Argo Workflows** and **Ku
 <!-- Future: Kubeflow Pipelines -->
 ## The Future: MLOps at Scale
 
-![bg right:33%](./zone-4.png)
+![bg right:30%](./zone-8.png)
 
 We are moving toward end-to-end reproducible workflows:
 
@@ -158,7 +158,7 @@ We are moving toward end-to-end reproducible workflows:
 <!-- Data Access -->
 ## Breaking Down Barriers
 
-![bg right:33%](./zone-4.png)
+![bg right:30%](./zone-9.png)
 
 Challenges remain:
 
@@ -174,7 +174,7 @@ Challenges remain:
 <!-- Portability & Federated Future -->
 ## A Federated Future
 
-![bg right:33%](./zone-0.png)
+![bg right:30%](./zone-10.png)
 
 The Zone is open source and designed to scale and can be deployed by:
 
@@ -190,7 +190,7 @@ The Zone is open source and designed to scale and can be deployed by:
 <!-- Call to Action -->
 ## Enter The Zone
 
-![bg right:33%](./zone-0.png)
+![bg right:30%](./zone-11.png)
 
 You are invited to:
 
