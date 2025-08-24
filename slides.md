@@ -2,26 +2,26 @@
 # The Zone  
 ## A Modern Data Science Platform for Statistics Canada
 
-![bg right:30%](./zone-0.png)
+![bg right:33%](./zone-0.png)
 
 ---
 
 <!-- Who We Are -->
 ## The Zone Team – Summer 2025
 
-![bg right:30%](./zone-0.png)
+![bg right:33%](./zone-0.png)
 
 We are the team building and supporting The Zone:
 
 - Souheil, Mathis, Jose, Wendy, Bryan
-- Summer Co-op Students: Justin and Anray  
+- Co-op Students: Justin and Anray  
 
 ---
 
 <!-- Our Story / History -->
 ## Our Story: One Platform, Two Zones
 
-![bg right:30%](./zone-1.png)
+![bg right:33%](./zone-1.png)
 
 - The Advanced Analytics Workspace (AAW) was the first Zone
 - The Zone is its Protected B counterpart
@@ -34,12 +34,11 @@ We are the team building and supporting The Zone:
 <!-- What is The Zone? -->
 ## What Is The Zone?
 
-![bg right:30%](./zone-2.png)
+![bg right:33%](./zone-2.png)
 
 The Zone is a data science platform based on **Kubeflow**, running on **Azure AKS**, designed to orchestrate notebooks, jobs, and machine learning workflows.
 
 - Multilingual JupyterLab environments (Python, R, SAS, Julia)  
-- Secure compute for individuals and teams  
 - Scalable infrastructure for data science and automation  
 - A platform that runs on Azure but can run on any Kubernetes cluster
 
@@ -48,12 +47,11 @@ The Zone is a data science platform based on **Kubeflow**, running on **Azure AK
 <!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
-![bg right:30%](./zone-3.png)
+![bg right:33%](./zone-3.png)
 
 ### Language? No Barrier.
 
-- Python, R, Julia, SAS are all supported  
-- Multilingual Jupyter kernels  
+- Python, R, Julia, SAS are all supported
 - Migrate at your pace, in your language  
 - The only platform at StatCan where **SAS and Python/R coexist**
 
@@ -62,12 +60,12 @@ The Zone is a data science platform based on **Kubeflow**, running on **Azure AK
 <!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
-![bg right:30%](./zone-3.png)
+![bg right:33%](./zone-3.png)
 
 ### Organization? No Barrier.
 
 - Open source by design: cloneable, shareable, federatable  
-- We've already done it once: we can do it again  
+- We've already done it once: we can do it again
 - Ready to support other teams, departments, and levels of government
 
 ---
@@ -75,7 +73,7 @@ The Zone is a data science platform based on **Kubeflow**, running on **Azure AK
 <!-- Why Created -->
 ## Why Was The Zone Created?
 
-![bg right:30%](./zone-4.png)
+![bg right:33%](./zone-4.png)
 
 To deliver a secure, modern, and independent data platform.
 
@@ -91,7 +89,7 @@ To deliver a secure, modern, and independent data platform.
 <!-- Platform Strengths -->
 ## What We've Built
 
-![bg right:30%](./zone-5.png)
+![bg right:33%](./zone-5.png)
 
 - Over 2,200 users  
 - 130+ daily notebook sessions  
@@ -106,7 +104,7 @@ To deliver a secure, modern, and independent data platform.
 <!-- Summer 2025 -->
 ## Summer 2025: Stronger, Smarter, Safer
 
-![bg right:30%](./zone-6.png)
+![bg right:33%](./zone-6.png)
 
 We are evolving:
 
@@ -122,7 +120,7 @@ We are evolving:
 <!-- From Cron to Pipeline -->
 ## From CronJobs to Pipelines
 
-![bg right:30%](./zone-7.png)
+![bg right:33%](./zone-7.png)
 
 Today: scheduled scripts run in isolation.
 
@@ -135,43 +133,63 @@ Tomorrow: connected, observable workflows powered by **Argo Workflows** and **Ku
 
 ---
 
-<!-- Future: Kubeflow Pipelines -->
-## The Future: MLOps at Scale
+<!-- Future: Kubernetes Is Built for Orchestration -->
+## Kubernetes Is Built for Orchestration
 
-![bg right:30%](./zone-8.png)
+![bg right:33%](./zone-8.png)
 
-We are moving toward end-to-end reproducible workflows:
+At its core, **Kubernetes is designed to orchestrate workloads**: scaling, scheduling, and managing containers across clusters.
 
-- The AAW previously supported **Kubeflow Pipelines** and **Argo Workflows** — we can bring them back to The Zone  
-- Data -> Model -> Deployment, fully tracked and versioned  
-- CI/CD practices applied to data science pipelines  
-- Models monitored in production, with drift detection and retraining
+- It powers modern cloud-native applications  
+- Handles complex workflows with reliability and resilience  
+- Already runs The Zone's notebooks and CronJobs  
+
+> Orchestration isn't the future.  
+> It's already here, under the hood.
+
+---
+
+<!-- Future: Kubeflow Brings Orchestration to Data Science -->
+## Kubeflow Brings Orchestration to Data Scientists
+
+![bg right:33%](./zone-8.png)
+
+**Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists, through a clean, intuitive interface.
+
+- The AAW used **Kubeflow Pipelines** and **Argo Workflows** successfully  
+- We can re-enable them in The Zone, no reinvention needed  
+- End-to-end workflows: Data -> Model -> Deployment  
+- Versioned, reproducible, monitored  
+- CI/CD practices for data science, including retraining and drift detection  
+
+> We're not starting over.  
+> We're restoring what works, and making it secure, scalable, and standard.
 
 ---
 
 <!-- Data Access -->
 ## Breaking Down Barriers
 
-![bg right:30%](./zone-9.png)
+![bg right:33%](./zone-9.png)
 
 Challenges remain:
 
-- Database onboarding is slow due to network policies  
-- Legacy filer performance can constrain projects  
-- Some users find Kubernetes concepts unfamiliar  
-- Org-wide secrets management still in development
+- Database onboarding is slow due to network policies (networking)
+- Legacy filer performance can constrain projects (data migration)
+- Some users find Kubernetes concepts unfamiliar (education)
+- Org-wide secrets management still in development (keycloak)
 
 ---
 
 <!-- Portability & Federated Future -->
 ## A Federated Future
 
-![bg right:30%](./zone-10.png)
+![bg right:33%](./zone-10.png)
 
 The Zone is open source and designed to scale and can be deployed by:
 
 - Other teams at StatCan  
-- Federal departments (ESDC, ISED, DND, Health Canada)  
+- Federal departments
 - Provincial and municipal governments
 
 > Same foundation. Same security.  
@@ -182,7 +200,7 @@ The Zone is open source and designed to scale and can be deployed by:
 <!-- Call to Action -->
 ## Enter The Zone
 
-![bg right:30%](./zone-11.png)
+![bg right:33%](./zone-11.png)
 
 You are invited to:
 
