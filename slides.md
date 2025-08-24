@@ -1,5 +1,11 @@
 ---
 marp: true
+theme: statcan
+size: 16:9
+paginate: true
+footer: "Statistics Canada | Statistique Canada"
+header: "August 26, 2025"
+_class: lead
 ---
 
 <!-- Title Slide -->

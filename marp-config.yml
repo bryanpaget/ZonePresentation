@@ -1,5 +1,8 @@
-theme: default
+theme: statcan
 size: 16:9
 paginate: true
 header: "Statistics Canada | Statistique Canada"
-footer: "August 26 2025"
+footer: "August 26, 2025"
+_class: lead
+styles:
+  - ./statcan.css

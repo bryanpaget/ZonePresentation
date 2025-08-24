@@ -1,0 +1,111 @@
+/* == Marp Custom Theme: Statistics Canada == */
+
+@import 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap';
+
+/* Base theme */
+section.lead {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem !important; /* Consistent top spacing */
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+/* Force consistent vertical start */
+section h1:first-child {
+  margin-top: 1.8rem !important;
+}
+section h1 ~ p,
+section h2 ~ p,
+section p {
+  margin-top: 0.8rem !important;
+}
+
+/* Typography */
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #D31245; /* StatsCan red */
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #222;
+  max-width: 60ch;
+}
+li {
+  margin: 0.4rem 0;
+  line-height: 1.4;
+}
+
+/* Header & Footer Styling */
+section::after {
+  content: attr(data-header);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  color: #666;
+  font-weight: 600;
+}
+section::before {
+  content: attr(data-footer);
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+/* Background image alignment (for right:33%) */
+section img[src*="zone"] {
+  position: absolute !important;
+  right: 1rem !important;
+  top: 2.5rem !important;
+  width: 30% !important;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+/* Clean list style */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li::before {
+  content: "•";
+  color: #D31245;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Quote styling */
+blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+  border-left: 4px solid #D31245;
+  margin: 1rem 0;
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+/* Slide number alignment */
+section::after {
+  content: attr(data-page) "/" attr(data-total);
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.75rem;
+  color: #666;
+}

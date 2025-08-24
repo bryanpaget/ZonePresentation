@@ -29,13 +29,25 @@ jobs:
         
       - name: Create public directory
         run: mkdir -p public
-        
+
       - name: Convert Markdown to HTML
-        run: marp slides.md --html -o public/index.html --config-file marp-config.yml --allow-local-files
-        
+        run: |
+          marp slides.md \
+            --html \
+            --output public/index.html \
+            --config-file marp-config.yml \
+            --allow-local-files \
+            --css ./statcan.css
+
       - name: Convert Markdown to PDF
-        run: marp slides.md --pdf -o public/slides.pdf --config-file marp-config.yml --allow-local-files
-        
+        run: |
+          marp slides.md \
+            --pdf \
+            --output public/slides.pdf \
+            --config-file marp-config.yml \
+            --allow-local-files \
+            --css ./statcan.css
+            
       - name: Copy images to public directory
         run: cp ./*.png public/ 2>/dev/null || true
         
