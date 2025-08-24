@@ -12,9 +12,6 @@ _class: lead
 ## The Zone  
 ### A Modern Data Science Platform for Statistics Canada
 
-<br>
-<br>
-
 ######  *Brought to you by The Zone Team :heart:*
 ![bg right:33%](./canada-0.png)
 
@@ -41,7 +38,7 @@ _class: lead
 
 **One Platform, Two Zones**
 
-<br>
+
 
 ![bg right:33%](./zone-1.png)
 
@@ -50,7 +47,7 @@ _class: lead
 - Built on the same foundation:  
   **Kubeflow on Kubernetes**
 
-<br>
+
 
 > Same core. Same capabilities. Higher security.
 
@@ -68,7 +65,7 @@ Featuring:
 - **JupyterLab** supporting Python, R, SAS, Julia  
 - **Kubeflow** for scalable infrastructure for data science and automation  
 
-<br>
+
 
 > The Zone is a platform that runs on Azure AKS
 > but can run on any **Kubernetes** cluster.
@@ -82,7 +79,7 @@ Featuring:
 
 ### Which Language? No Barrier.
 
-<br>
+
 
 - Python, R, Julia, SAS are all supported  
 - Migrate at your pace, in your language  
@@ -97,7 +94,7 @@ Featuring:
 
 ### Which Organization? No Barrier.
 
-<br>
+
 
 - Open source by design: cloneable, shareable, federatable  
 - We've already done it once: we can do it again  
@@ -108,7 +105,7 @@ Featuring:
 <!-- Why Created -->
 ## Why Was The Zone Created?
 
-<br>
+
 
 ![bg right:33%](./zone-4.png)
 
@@ -118,7 +115,7 @@ To deliver a secure, modern, and independent data platform.
 - Reduce reliance on proprietary tools  
 - Long-term cost reduction through reusable, open infrastructure
 
-<br>
+
 
 > This is about sovereignty, sustainability, and self-reliance.
 
@@ -127,7 +124,7 @@ To deliver a secure, modern, and independent data platform.
 <!-- Platform Strengths -->
 ## What We've Built
 
-<br>
+
 
 ![bg right:33%](./zone-5.png)
 
@@ -136,7 +133,7 @@ To deliver a secure, modern, and independent data platform.
 - CronJobs powering real production workflows  
 - A stable, proven platform used across divisions
 
-<br>
+
 
 > This is not a prototype.  
 > This is production grade.
@@ -146,7 +143,7 @@ To deliver a secure, modern, and independent data platform.
 <!-- Summer 2025 -->
 ## Summer 2025
 
-<br>
+
 
 ![bg right:33%](./zone-6.png)
 
@@ -155,7 +152,7 @@ To deliver a secure, modern, and independent data platform.
 - **Volume and namespace cleaners** for automatic resource cleanup  
 - **CronJobs** for scheduling our pipeline-ready infrastructure
 
-<br>
+
 
 > Smarter. Cleaner. Faster.
 
@@ -175,7 +172,7 @@ To deliver a secure, modern, and independent data platform.
 - Kubeflow Pipelines enable end-to-end ML workflows with UI, caching, versioning  
 - Full logging, retry logic, error handling, triggers
 
-<br>
+
 
 > Automation, evolved.
 
@@ -184,7 +181,7 @@ To deliver a secure, modern, and independent data platform.
 <!-- Future: Kubernetes Is Built for Orchestration -->
 ## Kubernetes Is Built for Orchestration
 
-<br>
+
 
 ![bg right:11%](./zone-8.png)
 
@@ -194,7 +191,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 - Handles complex workflows reliably  
 - Already runs The Zone's notebooks and jobs
 
-<br>
+
 
 > Orchestration isn't the future.  
 > It's already here, under the hood.
@@ -204,7 +201,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 <!-- Future: Kubeflow Brings Orchestration to Data Science -->
 ## Kubeflow Brings Orchestration to Data Scientists
 
-<br>
+
 
 ![bg right:11%](./zone-8.png)
 
@@ -214,7 +211,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 - We can re-enable them in The Zone, no reinvention needed  
 - End-to-end workflows: versioned, reproducible, monitored
 
-<br>
+
 
 > We're not starting over.  
 > We're restoring what works and making it secure, scalable, standard.
@@ -224,7 +221,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 <!-- Data Access -->
 ## Challenges Remain
 
-<br>
+
 
 ![bg right:33%](./zone-9.png)
 
@@ -233,7 +230,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 - Kubernetes concepts: unfamiliar (education)  
 - Secrets management: in progress (Keycloak)
 
-<br>
+
 
 > We're solving these, with your feedback.
 
@@ -242,7 +239,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 <!-- Portability & Federated Future -->
 ## A Federated Future
 
-<br>
+
 
 ![bg right:33%](./zone-10.png)
 
@@ -252,7 +249,7 @@ The Zone is open source and designed to scale. It can be deployed by:
 - Federal departments  
 - Provincial and municipal governments
 
-<br>
+
 
 > Same foundation. Same security.  
 > *Deployed where you need it.*
@@ -272,7 +269,7 @@ You are invited to:
 - Help shape the future of data science at StatCan  
 - Host the next Zone in your department
 
-<br>
+
 
 > The Zone is a movement toward openness, sovereignty, and shared capability.  
 > *:heart: Built by data scientists, for data scientists.*
