@@ -63,8 +63,6 @@ The Zone is a data science platform based on **Kubeflow**, running on **Azure AK
 - We've already done it once: we can do it again  
 - Ready to support other teams, departments, and levels of government
 
-> This platform is built to spread.
-
 ---
 
 <!-- Why Created -->
