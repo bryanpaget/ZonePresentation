@@ -4,18 +4,155 @@ size: 16:9
 paginate: true
 footer: "Statistics Canada | Statistique Canada"
 header: "August 26, 2025"
-_class: lead
-theme: statcan
-styles:
-  - ./statcan.css
+theme: default
+style: |
+ /* Import Inter font from Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  
+  :root {
+    /* Color variables */
+    --primary-color: #26374a; /* Statistics Canada blue */
+    --secondary-color: #ea5936; /* Statistics Canada orange */
+    --accent-color: #3e6ca7;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333;
+    --text-color: #333;
+    --background-color: #fff;
+    
+    /* Font variables */
+    --main-font: 'Inter', sans-serif;
+    --code-font: 'Fira Code', 'Consolas', monospace;
+    
+    /* Size variables */
+    --base-font-size: 16px;
+    --h1-size: 2em;
+    --h2-size: 1.5em;
+    --h3-size: 1.25em;
+    --p-size: 0.9em;
+    --code-size: 0.85em;
+    
+    /* Spacing variables */
+    --section-padding: 1.5rem;
+    --element-margin: 0.75rem;
+  }
+  
+  /* Apply the font to all elements */
+  * {
+    font-family: var(--main-font);
+  }
+  
+  /* Header styles */
+  h1 {
+    font-size: var(--h1-size);
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: var(--element-margin);
+  }
+  
+  h2 {
+    font-size: var(--h2-size);
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: var(--element-margin);
+  }
+  
+  h3 {
+    font-size: var(--h3-size);
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: var(--element-margin);
+  }
+  
+  /* Paragraph styles */
+  p {
+    font-size: var(--p-size);
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: var(--element-margin);
+  }
+  
+  /* Code block styles */
+  pre > code {
+    font-family: var(--code-font);
+    font-size: var(--code-size);
+    background-color: var(--light-gray);
+    padding: 1rem;
+    border-radius: 4px;
+    line-height: 1.4;
+  }
+  
+  /* Blockquote styles */
+  blockquote {
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 1rem;
+    margin-left: 0;
+    color: var(--dark-gray);
+    font-style: italic;
+  }
+  
+  /* List styles */
+  ul, ol {
+    font-size: var(--p-size);
+    margin-bottom: var(--element-margin);
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Footer and header customization */
+  footer, header {
+    font-size: 0.8em;
+    color: var(--primary-color);
+    opacity: 0.8;
+  }
+  
+  /* Section styling */
+  section {
+    padding: var(--section-padding);
+  }
+  
+  /* Background image adjustments */
+  img[bg] {
+    opacity: 0.15;
+  }
+  
+  /* Link styling */
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Custom classes for special elements */
+  .highlight {
+    background-color: rgba(234, 89, 54, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-weight: 500;
+  }
+  
+  .callout {
+    border-left: 4px solid var(--secondary-color);
+    background-color: var(--light-gray);
+    padding: 1rem;
+    margin: 1rem 0;
+  }
 ---
 
 <!-- Title Slide -->
-## The Zone  
-### A Modern Data Science Platform for Statistics Canada
+<!-- _class: lead -->
+# The Zone  
+### A Modern Data Science Platform 
+#### For Statistics Canada
+
+<br>
 
 ######  *Brought to you by The Zone Team :heart:*
-![bg right:33%](./canada-0.png)
+![bg left:33%](./zone-0.png)
 
 ---
 
@@ -24,7 +161,7 @@ styles:
 
 **Summer 2025**
 
-![bg right:33%](./zone-0.png)
+![bg left:33%](./zone-0.png)
 
 - Souheil Yazji
 - Mathis Marcotte
@@ -42,12 +179,13 @@ styles:
 
 
 
-![bg right:33%](./zone-1.png)
+![bg left:33%](./zone-1.png)
 
 - The Advanced Analytics Workspace (AAW) was the first Zone  
 - The Zone is its Protected B counterpart  
 - Built on the same foundation:  
   **Kubeflow on Kubernetes**
+
 
 
 
@@ -58,7 +196,7 @@ styles:
 <!-- What is The Zone? -->
 ## What Is The Zone?
 
-![bg right:33%](./zone-2.png)
+![bg left:33%](./zone-2.png)
 
 The Zone is a data science platform based on **Kubeflow**, designed to orchestrate notebooks, jobs, and machine learning workflows.
 
@@ -66,7 +204,6 @@ Featuring:
 
 - **JupyterLab** supporting Python, R, SAS, Julia  
 - **Kubeflow** for scalable infrastructure for data science and automation  
-
 
 
 > The Zone is a platform that runs on Azure AKS
@@ -77,7 +214,7 @@ Featuring:
 <!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
-![bg right:33%](./zone-3.png)
+![bg left:33%](./zone-3.png)
 
 ### Which Language? No Barrier.
 
@@ -92,7 +229,7 @@ Featuring:
 <!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
-![bg right:33%](./zone-3.png)
+![bg left:33%](./zone-3.png)
 
 ### Which Organization? No Barrier.
 
@@ -109,7 +246,7 @@ Featuring:
 
 
 
-![bg right:33%](./zone-4.png)
+![bg left:33%](./zone-4.png)
 
 To deliver a secure, modern, and independent data platform.
 
@@ -128,7 +265,7 @@ To deliver a secure, modern, and independent data platform.
 
 
 
-![bg right:33%](./zone-5.png)
+![bg left:33%](./zone-5.png)
 
 - Over 2,200 users  
 - 130+ daily notebook sessions  
@@ -147,7 +284,7 @@ To deliver a secure, modern, and independent data platform.
 
 
 
-![bg right:33%](./zone-6.png)
+![bg left:33%](./zone-6.png)
 
 - **MKL** acceleration for faster numerical computing  
 - Tesseract **OCR** to extract text from scanned documents  
@@ -164,7 +301,7 @@ To deliver a secure, modern, and independent data platform.
 ## From CronJobs to Pipelines
 
 
-![bg right:22%](./zone-7.png)
+![bg left:22%](./zone-7.png)
 
 **Today:**  CronJobs run in isolation.
 
@@ -185,7 +322,7 @@ To deliver a secure, modern, and independent data platform.
 
 
 
-![bg right:11%](./zone-8.png)
+![bg left:11%](./zone-8.png)
 
 At its core, **Kubernetes is designed to orchestrate workloads**: scaling, scheduling, and managing containers across clusters.
 
@@ -205,7 +342,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 
 
 
-![bg right:11%](./zone-8.png)
+![bg left:11%](./zone-8.png)
 
 **Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists through a clean, intuitive interface.
 
@@ -225,7 +362,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 
 
 
-![bg right:33%](./zone-9.png)
+![bg left:33%](./zone-9.png)
 
 - Database onboarding: slow (network policies)  
 - Legacy filer performance: limiting (data migration)  
@@ -243,7 +380,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 
 
 
-![bg right:33%](./zone-10.png)
+![bg left:33%](./zone-10.png)
 
 The Zone is open source and designed to scale. It can be deployed by:
 
@@ -262,7 +399,7 @@ The Zone is open source and designed to scale. It can be deployed by:
 ## Enter The Zone
 
 
-![bg right:33%](./canada-0.png)
+![bg left:33%](./zone-0.png)
 
 You are invited to:
 
