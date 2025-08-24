@@ -57,6 +57,13 @@ The Zone is a data science platform based on **Kubeflow**, running on **Azure AK
 - Migrate at your pace, in your language  
 - The only platform at StatCan where **SAS and Python/R coexist**
 
+---
+
+<!-- Inclusivity & SAS Coexistence -->
+## Everyone Is Welcome
+
+![bg right:30%](./zone-3.png)
+
 ### Organization? No Barrier.
 
 - Open source by design: cloneable, shareable, federatable  
