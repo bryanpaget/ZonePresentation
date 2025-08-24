@@ -53,18 +53,17 @@ marp: true
 <!-- What is The Zone? -->
 ## What Is The Zone?
 
-<br>
-
 ![bg left:31%](./zone-2.png)
 
-The Zone is a data science platform based on **Kubeflow**, running on **Azure AKS**, designed to orchestrate notebooks, jobs, and machine learning workflows. Featuring:
+The Zone is a data science platform based on **Kubeflow**, designed to orchestrate notebooks, jobs, and machine learning workflows.
+
+Featuring:
 
 - **JupyterLab** supporting Python, R, SAS, Julia  
 - **Kubeflow** for scalable infrastructure for data science and automation  
 
-<br>
 
-> The Zone is a platform that runs on Azure  
+> The Zone is a platform that runs on Azure AKS
 > but can run on any **Kubernetes** cluster.
 
 ---
@@ -74,7 +73,7 @@ The Zone is a data science platform based on **Kubeflow**, running on **Azure AK
 
 ![bg right:40%](./zone-3.png)
 
-### Language? No Barrier.
+### Which Language? No Barrier.
 
 <br>
 
