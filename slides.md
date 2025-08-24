@@ -16,16 +16,17 @@ marp: true
 
 <!-- Who We Are -->
 ## The Zone Team
-**Summer 2025**
 
-<br>
+**Summer 2025**
 
 ![bg right:40%](./zone-0.png)
 
-We are the team building and supporting The Zone:
-
-- Souheil, Mathis, Jose, Wendy, Bryan
-- Co-op Students: Justin and Anray  
+- Souheil Yazji
+- Mathis Marcotte
+- Jose Matsuda
+- Wendy Gaultier
+- Bryan Paget  
+- With special thanks to our co-op students Justin Zhang and Anray Liu
 
 ---
 
@@ -38,10 +39,12 @@ We are the team building and supporting The Zone:
 
 ![bg left:36%](./zone-1.png)
 
-- The Advanced Analytics Workspace (AAW) was the first Zone
-- The Zone is its Protected B counterpart
-- Built on the same foundation:
-**Kubeflow on Kubernetes**  
+- The Advanced Analytics Workspace (AAW) was the first Zone  
+- The Zone is its Protected B counterpart  
+- Built on the same foundation:  
+  **Kubeflow on Kubernetes**
+
+<br>
 
 > Same core. Same capabilities. Higher security.
 
@@ -50,13 +53,19 @@ We are the team building and supporting The Zone:
 <!-- What is The Zone? -->
 ## What Is The Zone?
 
+<br>
+
 ![bg left:31%](./zone-2.png)
 
-The Zone is a data science platform based on **Kubeflow**, running on **Azure AKS**, designed to orchestrate notebooks, jobs, and machine learning workflows.
+The Zone is a data science platform based on **Kubeflow**, running on **Azure AKS**, designed to orchestrate notebooks, jobs, and machine learning workflows. Featuring:
 
-- **JupyterLab** supporting Python, R, SAS, Julia
-- **Kubeflow** for Scalable infrastructure for data science and automation
-- A platform that runs on Azure but can run on any **Kubernetes** cluster
+- **JupyterLab** supporting Python, R, SAS, Julia  
+- **Kubeflow** for scalable infrastructure for data science and automation  
+
+<br>
+
+> The Zone is a platform that runs on Azure  
+> but can run on any **Kubernetes** cluster.
 
 ---
 
@@ -69,7 +78,7 @@ The Zone is a data science platform based on **Kubeflow**, running on **Azure AK
 
 <br>
 
-- Python, R, Julia, SAS are all supported
+- Python, R, Julia, SAS are all supported  
 - Migrate at your pace, in your language  
 - **The only platform at StatCan where SAS and Python/R coexist**
 
@@ -80,12 +89,12 @@ The Zone is a data science platform based on **Kubeflow**, running on **Azure AK
 
 ![bg left:34%](./zone-3.png)
 
-### Organization? No Barrier.
+### Which Organization? No Barrier.
 
 <br>
 
 - Open source by design: cloneable, shareable, federatable  
-- We've already done it once: we can do it again
+- We've already done it once: we can do it again  
 - Ready to support other teams, departments, and levels of government
 
 ---
@@ -99,9 +108,9 @@ The Zone is a data science platform based on **Kubeflow**, running on **Azure AK
 
 To deliver a secure, modern, and independent data platform.
 
-- Provide a **Protected B compliant** environment
+- Provide a **Protected B compliant** environment  
 - Reduce reliance on proprietary tools  
-- Long-term cost reduction through reusable, open infrastructure  
+- Long-term cost reduction through reusable, open infrastructure
 
 <br>
 
@@ -124,6 +133,7 @@ To deliver a secure, modern, and independent data platform.
 <br>
 
 > This is not a prototype.  
+> This is production grade.
 
 ---
 
@@ -139,22 +149,29 @@ To deliver a secure, modern, and independent data platform.
 - **Volume and namespace cleaners** for automatic resource cleanup  
 - **CronJobs** for scheduling our pipeline-ready infrastructure
 
+<br>
+
+> Smarter. Cleaner. Faster.
+
 ---
 
 <!-- From Cron to Pipeline -->
 ## From CronJobs to Pipelines
 
-<br>
 
 ![bg left:25%](./zone-7.png)
 
-Today: CronJobs run in isolation.
+**Today:**  CronJobs run in isolation.
 
-Tomorrow: connected, observable workflows powered by **Argo Workflows** and **Kubeflow Pipelines**.
+**Tomorrow:**  Connected, observable workflows powered by **Argo Workflows** and **Kubeflow Pipelines**.
 
 - Argo Workflows orchestrates complex job sequences on Kubernetes  
-- Kubeflow Pipelines enables end-to-end ML workflows with UI, caching, and versioning  
-- Full logging, retry logic, error handling, and trigger-based execution  
+- Kubeflow Pipelines enable end-to-end ML workflows with UI, caching, versioning  
+- Full logging, retry logic, error handling, triggers
+
+<br>
+
+> Automation, evolved.
 
 ---
 
@@ -167,9 +184,9 @@ Tomorrow: connected, observable workflows powered by **Argo Workflows** and **Ku
 
 At its core, **Kubernetes is designed to orchestrate workloads**: scaling, scheduling, and managing containers across clusters.
 
-- It powers modern cloud-native applications  
-- Handles complex workflows with reliability and resilience  
-- Already runs The Zone's notebooks and CronJobs  
+- Powers modern cloud-native apps  
+- Handles complex workflows reliably  
+- Already runs The Zone's notebooks and jobs
 
 <br>
 
@@ -181,19 +198,19 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 <!-- Future: Kubeflow Brings Orchestration to Data Science -->
 ## Kubeflow Brings Orchestration to Data Scientists
 
-<br>
 
-![bg right:20%](./zone-8.png)
+![bg right:17%](./zone-8.png)
 
-**Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists, through a clean, intuitive interface.
+**Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists through a clean, intuitive interface.
 
-- The AAW used **Kubeflow Pipelines** and **Argo Workflows**
+- The AAW used **Kubeflow Pipelines** and **Argo Workflows**  
 - We can re-enable them in The Zone, no reinvention needed  
-- End-to-end workflows: versioned, reproducible, monitored  
+- End-to-end workflows: versioned, reproducible, monitored
 
 <br>
 
-> We're not starting over. We're restoring what works, and making it secure, scalable, and standard.
+> We're not starting over.  
+> We're restoring what works and making it secure, scalable, standard.
 
 ---
 
@@ -204,10 +221,14 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 
 ![bg left:30%](./zone-9.png)
 
-- Database onboarding is slow due to network policies (networking)
-- Legacy filer performance can constrain projects (data migration)
-- Some users find Kubernetes concepts unfamiliar (education)
-- Org-wide secrets management still in development (keycloak)
+- Database onboarding: slow (network policies)  
+- Legacy filer performance: limiting (data migration)  
+- Kubernetes concepts: unfamiliar (education)  
+- Secrets management: in progress (Keycloak)
+
+<br>
+
+> We're solving these, with your feedback.
 
 ---
 
@@ -218,10 +239,10 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 
 ![bg right:40%](./zone-10.png)
 
-The Zone is open source and designed to scale and can be deployed by:
+The Zone is open source and designed to scale. It can be deployed by:
 
 - Other teams at StatCan  
-- Federal departments
+- Federal departments  
 - Provincial and municipal governments
 
 <br>
@@ -240,11 +261,12 @@ The Zone is open source and designed to scale and can be deployed by:
 
 You are invited to:
 
-- Access the platform: https://zone.statcan.ca      
+- Access the platform: https://zone.statcan.ca  
 - Attend training and workshops  
 - Help shape the future of data science at StatCan  
 - Host the next Zone in your department
 
 <br>
 
-> The Zone is a movement toward openness, sovereignty, and shared capability.
+> The Zone is a movement toward openness, sovereignty, and shared capability.  
+> :heart: Built by data scientists, for data scientists.
