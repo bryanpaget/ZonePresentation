@@ -10,7 +10,7 @@ marp: true
 <br>
 
 ######  *Brought to you by The Zone Team :heart:*
-![bg right:50%](./zone-0.png)
+![bg right:33%](./canada-0.png)
 
 ---
 
@@ -19,7 +19,7 @@ marp: true
 
 **Summer 2025**
 
-![bg right:40%](./zone-0.png)
+![bg right:33%](./zone-0.png)
 
 - Souheil Yazji
 - Mathis Marcotte
@@ -37,7 +37,7 @@ marp: true
 
 <br>
 
-![bg left:36%](./zone-1.png)
+![bg right:33%](./zone-1.png)
 
 - The Advanced Analytics Workspace (AAW) was the first Zone  
 - The Zone is its Protected B counterpart  
@@ -53,7 +53,7 @@ marp: true
 <!-- What is The Zone? -->
 ## What Is The Zone?
 
-![bg left:31%](./zone-2.png)
+![bg right:33%](./zone-2.png)
 
 The Zone is a data science platform based on **Kubeflow**, designed to orchestrate notebooks, jobs, and machine learning workflows.
 
@@ -62,6 +62,7 @@ Featuring:
 - **JupyterLab** supporting Python, R, SAS, Julia  
 - **Kubeflow** for scalable infrastructure for data science and automation  
 
+<br>
 
 > The Zone is a platform that runs on Azure AKS
 > but can run on any **Kubernetes** cluster.
@@ -71,7 +72,7 @@ Featuring:
 <!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
-![bg right:40%](./zone-3.png)
+![bg right:33%](./zone-3.png)
 
 ### Which Language? No Barrier.
 
@@ -86,7 +87,7 @@ Featuring:
 <!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
-![bg left:34%](./zone-3.png)
+![bg left:33%](./zone-3.png)
 
 ### Which Organization? No Barrier.
 
@@ -103,7 +104,7 @@ Featuring:
 
 <br>
 
-![bg right:21%](./zone-4.png)
+![bg right:33%](./zone-4.png)
 
 To deliver a secure, modern, and independent data platform.
 
@@ -122,7 +123,7 @@ To deliver a secure, modern, and independent data platform.
 
 <br>
 
-![bg right:30%](./zone-5.png)
+![bg right:33%](./zone-5.png)
 
 - Over 2,200 users  
 - 130+ daily notebook sessions  
@@ -141,7 +142,7 @@ To deliver a secure, modern, and independent data platform.
 
 <br>
 
-![bg right:28%](./zone-6.png)
+![bg right:33%](./zone-6.png)
 
 - **MKL** acceleration for faster numerical computing  
 - Tesseract **OCR** to extract text from scanned documents  
@@ -158,7 +159,7 @@ To deliver a secure, modern, and independent data platform.
 ## From CronJobs to Pipelines
 
 
-![bg left:25%](./zone-7.png)
+![bg right:22%](./zone-7.png)
 
 **Today:**  CronJobs run in isolation.
 
@@ -179,7 +180,7 @@ To deliver a secure, modern, and independent data platform.
 
 <br>
 
-![bg right:20%](./zone-8.png)
+![bg right:11%](./zone-8.png)
 
 At its core, **Kubernetes is designed to orchestrate workloads**: scaling, scheduling, and managing containers across clusters.
 
@@ -197,8 +198,9 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 <!-- Future: Kubeflow Brings Orchestration to Data Science -->
 ## Kubeflow Brings Orchestration to Data Scientists
 
+<br>
 
-![bg right:17%](./zone-8.png)
+![bg right:11%](./zone-8.png)
 
 **Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists through a clean, intuitive interface.
 
@@ -218,7 +220,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 
 <br>
 
-![bg left:30%](./zone-9.png)
+![bg right:33%](./zone-9.png)
 
 - Database onboarding: slow (network policies)  
 - Legacy filer performance: limiting (data migration)  
@@ -236,7 +238,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 
 <br>
 
-![bg right:40%](./zone-10.png)
+![bg right:33%](./zone-10.png)
 
 The Zone is open source and designed to scale. It can be deployed by:
 
@@ -247,16 +249,15 @@ The Zone is open source and designed to scale. It can be deployed by:
 <br>
 
 > Same foundation. Same security.  
-> Deployed where you need it.
+> *Deployed where you need it.*
 
 ---
 
 <!-- Call to Action -->
 ## Enter The Zone
 
-<br>
 
-![bg left:30%](./zone-11.png)
+![bg right:33%](./canada-0.png)
 
 You are invited to:
 
@@ -268,4 +269,4 @@ You are invited to:
 <br>
 
 > The Zone is a movement toward openness, sovereignty, and shared capability.  
-> :heart: Built by data scientists, for data scientists.
+> *:heart: Built by data scientists, for data scientists.*
