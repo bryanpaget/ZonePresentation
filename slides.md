@@ -1,11 +1,13 @@
 ---
 marp: true
-theme: statcan
 size: 16:9
 paginate: true
 footer: "Statistics Canada | Statistique Canada"
 header: "August 26, 2025"
 _class: lead
+theme: statcan
+styles:
+  - ./statcan.css
 ---
 
 <!-- Title Slide -->
@@ -90,7 +92,7 @@ Featuring:
 <!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
-![bg left:33%](./zone-3.png)
+![bg right:33%](./zone-3.png)
 
 ### Which Organization? No Barrier.
 
