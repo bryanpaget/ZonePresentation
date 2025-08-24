@@ -1,186 +1,230 @@
+---
+marp: true
+---
 
 <!-- Title Slide -->
-# The Zone  
-## A Modern Data Science Platform for Statistics Canada
+## The Zone  
+### A Modern Data Science Platform for Statistics Canada
 
-![bg right:33%](./zone-0.png)
+<br>
+<br>
+
+######  *Brought to you by The Zone Team :heart:*
+![bg right:50%](./zone-0.png)
 
 ---
 
 <!-- Who We Are -->
-## The Zone Team – Summer 2025
+## The Zone Team
+**Summer 2025**
 
-![bg right:33%](./zone-0.png)
+<br>
+
+![bg right:40%](./zone-0.png)
 
 We are the team building and supporting The Zone:
 
-- Souheil, Mathis, Jose, Wendy, Bryan  
+- Souheil, Mathis, Jose, Wendy, Bryan
 - Co-op Students: Justin and Anray  
-- Dedicated to modern, secure, and open data science
-
-> We design, develop, and support a platform that works — for everyone.
 
 ---
 
 <!-- Our Story / History -->
-## Our Story: One Platform, Two Zones
+## Our Story
 
-![bg right:33%](./zone-1.png)
+**One Platform, Two Zones**
 
-The journey began with the **Advanced Analytics Workspace (AAW)** — an open, external environment for innovation.
+<br>
 
-Now, **The Zone** brings that same power inside StatCan, as a **Protected B compliant** platform.
+![bg left:36%](./zone-1.png)
 
-- Same foundation: **Kubeflow on Kubernetes**  
-- Same user experience, enhanced security  
-- Proven portability: we’ve already migrated workloads and users
+- The Advanced Analytics Workspace (AAW) was the first Zone
+- The Zone is its Protected B counterpart
+- Built on the same foundation:
+**Kubeflow on Kubernetes**  
 
-> Same core capabilities, higher security  
-> A proven foundation for modern analytics
+> Same core. Same capabilities. Higher security.
 
 ---
 
 <!-- What is The Zone? -->
 ## What Is The Zone?
 
-![bg right:33%](./zone-2.png)
+![bg left:31%](./zone-2.png)
 
-The Zone is a secure, scalable data science platform built for real-world analytics.
+The Zone is a data science platform based on **Kubeflow**, running on **Azure AKS**, designed to orchestrate notebooks, jobs, and machine learning workflows.
 
-It features:
-
-- Multilingual JupyterLab environments (Python, R, SAS, Julia)  
-- Scalable compute for individuals and teams  
-- Cloud-native architecture on **Azure AKS**  
-- Designed to run anywhere with Kubernetes
-
-> Orchestrating notebooks, jobs, and ML workflows  
-> Not locked to a cloud — built for flexibility
+- **JupyterLab** supporting Python, R, SAS, Julia
+- **Kubeflow** for Scalable infrastructure for data science and automation
+- A platform that runs on Azure but can run on any **Kubernetes** cluster
 
 ---
 
 <!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
-![bg right:33%](./zone-3.png)
+![bg right:40%](./zone-3.png)
 
 ### Language? No Barrier.
 
-- Python, R, Julia, SAS — all supported  
-- Migrate at your own pace, in your preferred language  
-- The only platform at StatCan where **SAS and Python/R coexist**
+<br>
 
-Protect legacy code while growing into open source.
+- Python, R, Julia, SAS are all supported
+- Migrate at your pace, in your language  
+- **The only platform at StatCan where SAS and Python/R coexist**
 
-> Your language. Your pace. Our platform.
+---
+
+<!-- Inclusivity & SAS Coexistence -->
+## Everyone Is Welcome
+
+![bg left:34%](./zone-3.png)
+
+### Organization? No Barrier.
+
+<br>
+
+- Open source by design: cloneable, shareable, federatable  
+- We've already done it once: we can do it again
+- Ready to support other teams, departments, and levels of government
+
+---
+
+<!-- Why Created -->
+## Why Was The Zone Created?
+
+<br>
+
+![bg right:21%](./zone-4.png)
+
+To deliver a secure, modern, and independent data platform.
+
+- Provide a **Protected B compliant** environment
+- Reduce reliance on proprietary tools  
+- Long-term cost reduction through reusable, open infrastructure  
+
+<br>
+
+> This is about sovereignty, sustainability, and self-reliance.
 
 ---
 
 <!-- Platform Strengths -->
-## Production Proven Platform
+## What We've Built
 
-![bg right:33%](./zone-5.png)
+<br>
 
-The Zone is not a pilot. It’s in production — and growing.
+![bg right:30%](./zone-5.png)
 
-- Over **2,200 registered users**  
-- **130+ daily notebook sessions**  
-- CronJobs powering real workflows across divisions
+- Over 2,200 users  
+- 130+ daily notebook sessions  
+- CronJobs powering real production workflows  
+- A stable, proven platform used across divisions
 
-Teams use it for research, automation, modeling, and reporting.
+<br>
 
-> Not a prototype — production analytics  
-> infrastructure serving StatCan every day
+> This is not a prototype.  
 
 ---
 
 <!-- Summer 2025 -->
-## Summer 2025: Enhanced Capabilities
+## Summer 2025
 
-![bg right:33%](./zone-6.png)
+<br>
 
-We are continuously improving The Zone:
+![bg right:28%](./zone-6.png)
 
-- **MKL acceleration**: faster numerical computing for Python and R  
-- **Tesseract OCR**: extract text from scanned documents and PDFs  
-- **Automated cleanup systems**: reclaim storage with volume and namespace cleaners  
-- **Pipeline-ready infrastructure**: one step from scripts to orchestrated workflows
-
-> Performance, efficiency, and readiness  
-> all continuously improving
+- **MKL** acceleration for faster numerical computing  
+- Tesseract **OCR** to extract text from scanned documents  
+- **Volume and namespace cleaners** for automatic resource cleanup  
+- **CronJobs** for scheduling our pipeline-ready infrastructure
 
 ---
 
 <!-- From Cron to Pipeline -->
-## Evolving to Orchestrated Workflows
+## From CronJobs to Pipelines
 
-![bg right:33%](./zone-7.png)
+<br>
 
-Today, many workflows run as isolated CronJobs.
+![bg left:25%](./zone-7.png)
 
-Tomorrow, we move to **connected, observable pipelines**:
+Today: CronJobs run in isolation.
 
-- **Argo Workflows**: orchestrates complex sequences on Kubernetes  
-- **Kubeflow Pipelines**: enables end-to-end ML workflows with UI, caching, and versioning  
-- Full logging, retry logic, error handling, and monitoring  
-- Visualize every step from data to model to deployment
+Tomorrow: connected, observable workflows powered by **Argo Workflows** and **Kubeflow Pipelines**.
 
-> Visualize and monitor every step  
-> from data to deployment
+- Argo Workflows orchestrates complex job sequences on Kubernetes  
+- Kubeflow Pipelines enables end-to-end ML workflows with UI, caching, and versioning  
+- Full logging, retry logic, error handling, and trigger-based execution  
 
 ---
 
-<!-- Future: Kubernetes Foundation -->
-## Built on an Orchestration Foundation
+<!-- Future: Kubernetes Is Built for Orchestration -->
+## Kubernetes Is Built for Orchestration
 
-![bg right:33%](./zone-8.png)
+<br>
 
-At its core, **Kubernetes is designed for orchestration**.
+![bg right:20%](./zone-8.png)
 
-- It schedules, scales, and manages containers across clusters  
-- Powers modern cloud-native applications  
-- Already runs notebooks and CronJobs in The Zone  
+At its core, **Kubernetes is designed to orchestrate workloads**: scaling, scheduling, and managing containers across clusters.
 
-This isn’t experimental — it’s battle-tested infrastructure.
+- It powers modern cloud-native applications  
+- Handles complex workflows with reliability and resilience  
+- Already runs The Zone's notebooks and CronJobs  
 
-> Orchestration isn't the future —  
-> it's already here, powering The Zone
+<br>
+
+> Orchestration isn't the future.  
+> It's already here, under the hood.
 
 ---
 
 <!-- Future: Kubeflow Brings Orchestration to Data Science -->
 ## Kubeflow Brings Orchestration to Data Scientists
 
-![bg right:33%](./zone-9.png)
+<br>
 
-**Kubeflow was built for pipelines.**  
-It brings Kubernetes’ power to data scientists — through a clean, intuitive interface.
+![bg right:20%](./zone-8.png)
 
-- The AAW successfully used **Kubeflow Pipelines** and **Argo Workflows**  
-- We can re-enable them in The Zone — no reinvention needed  
-- End-to-end workflows: Data -> Model -> Deployment  
-- Versioned, reproducible, monitored  
-- CI/CD practices for data science, including retraining and drift detection  
+**Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists, through a clean, intuitive interface.
 
-> We’re not starting over.  
-> We’re restoring what works — and making it secure, scalable, and standard.
+- The AAW used **Kubeflow Pipelines** and **Argo Workflows**
+- We can re-enable them in The Zone, no reinvention needed  
+- End-to-end workflows: versioned, reproducible, monitored  
+
+<br>
+
+> We're not starting over. We're restoring what works, and making it secure, scalable, and standard.
 
 ---
 
-<!-- Federated Future -->
-## A Federated Future Awaits
+<!-- Data Access -->
+## Challenges Remain
 
-![bg right:33%](./zone-10.png)
+<br>
 
-The Zone is open source by design — built to spread.
+![bg left:30%](./zone-9.png)
 
-It can be deployed by:
+- Database onboarding is slow due to network policies (networking)
+- Legacy filer performance can constrain projects (data migration)
+- Some users find Kubernetes concepts unfamiliar (education)
+- Org-wide secrets management still in development (keycloak)
 
-- Other teams within StatCan  
-- Federal departments (ESDC, ISED, DND, Health Canada)  
-- Provincial and municipal governments  
+---
 
-No need to rebuild. Just clone, configure, and go.
+<!-- Portability & Federated Future -->
+## A Federated Future
+
+<br>
+
+![bg right:40%](./zone-10.png)
+
+The Zone is open source and designed to scale and can be deployed by:
+
+- Other teams at StatCan  
+- Federal departments
+- Provincial and municipal governments
+
+<br>
 
 > Same foundation. Same security.  
 > Deployed where you need it.
@@ -188,16 +232,19 @@ No need to rebuild. Just clone, configure, and go.
 ---
 
 <!-- Call to Action -->
-## Enter The Zone Today
+## Enter The Zone
 
-![bg right:33%](./zone-11.png)
+<br>
 
-You are invited to join us:
+![bg left:30%](./zone-11.png)
 
-- Access the platform: zone.statcan.ca  
-- Attend our training workshops  
-- Help shape StatCan's data science future  
-- Host the next Zone in your area
+You are invited to:
 
-> The movement toward openness,  
-> sovereignty, and shared capability
+- Access the platform: https://zone.statcan.ca      
+- Attend training and workshops  
+- Help shape the future of data science at StatCan  
+- Host the next Zone in your department
+
+<br>
+
+> The Zone is a movement toward openness, sovereignty, and shared capability.
