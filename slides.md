@@ -1,32 +1,34 @@
 <!-- Title Slide -->
-# The Zone
-## A Modern Data Science Platform
+# The Zone  
+## A Modern Data Science Platform for Statistics Canada
 
 ![bg right:33%](./zone-0.png)
 
 ---
 
 <!-- Who We Are -->
-## Our Team
+## The Zone Team – Summer 2025
 
 ![bg right:33%](./zone-0.png)
 
-Building and supporting the platform:
+We are the team building and supporting:
 - Souheil, Mathis, Jose, Wendy, Bryan
-- Co-op Students: Justin and Anray
+- Co-op Students: Justin and Anray  
+- Dedicated to modern data science
 
 ---
 
 <!-- Our Story / History -->
-## Our Story: One Foundation
+## Our Story: One Platform, Two Zones
 
 ![bg right:33%](./zone-1.png)
 
-- Born from the Advanced Analytics Workspace
-- Its Protected B counterpart
-- Same core: **Kubeflow on Kubernetes**
+- The Advanced Analytics Workspace was first
+- The Zone is its Protected B counterpart
+- Both built on Kubeflow and Kubernetes
 
-> One flexible core, multiple secure zones.
+> Same core capabilities, higher security  
+> Proven foundation for modern analytics
 
 ---
 
@@ -35,103 +37,118 @@ Building and supporting the platform:
 
 ![bg right:33%](./zone-2.png)
 
-A secure data science platform for:
-- Multilingual Jupyter notebooks
-- Scalable, automated workflows
-- Open, cloud-native infrastructure
+A Protected B data science platform featuring:
+- Multilingual JupyterLab environments
+- Scalable infrastructure for automation
+- Cloud-native Kubernetes foundation
+
+> Orchestrating notebooks, jobs, and ML workflows  
+> Running on Azure but portable anywhere
 
 ---
 
-<!-- Inclusivity -->
+<!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
 ![bg right:33%](./zone-3.png)
 
-- Python, R, Julia, SAS coexist
-- Migrate at your own pace
-- The only platform that unites languages
+### Language? No Barrier.
+- Python, R, Julia, SAS all supported
+- Migrate at your comfortable pace
+- Only platform where SAS and Python coexist
 
 > Your language. Your pace. Our platform.
 
 ---
 
-<!-- Why Created -->
-## Why We Built It
-
-![bg right:33%](./zone-4.png)
-
-To deliver a sovereign platform:
-- Protected B compliant
-- Reduced proprietary reliance
-- Reusable, open infrastructure
-
-> Sovereignty, sustainability, and self-reliance.
-
----
-
 <!-- Platform Strengths -->
-## A Proven Platform
+## Production Proven Platform
 
 ![bg right:33%](./zone-5.png)
 
-- Over 2,200 users
-- 130+ daily sessions
-- CronJobs in production
+Supporting enterprise analytics:
+- Over 2,200 registered users
+- 130+ daily notebook sessions
+- CronJobs powering production workflows
 
-> This is production-grade infrastructure.
+> Not a prototype - production analytics  
+> infrastructure serving StatCan
 
 ---
 
-<!-- The Flexible Future -->
-## A Flexible Foundation
+<!-- Summer 2025 -->
+## Summer 2025: Enhanced Capabilities
 
 ![bg right:33%](./zone-6.png)
 
-Kubernetes orchestrates everything.
-- It powers today's notebooks and jobs
-- It is built for complex workflows
-- The foundation is already in place
+New capabilities being added:
+- MKL acceleration for faster computing
+- Tesseract OCR for document processing
+- Automated resource cleanup systems
+- Pipeline-ready infrastructure
 
-> The power for tomorrow is here today.
+> Performance, efficiency, and readiness  
+> all continuously improving
 
 ---
 
 <!-- From Cron to Pipeline -->
-## From Scripts to Pipelines
+## Evolving to Orchestrated Workflows
 
 ![bg right:33%](./zone-7.png)
 
-We are enabling:
-- Argo Workflows for orchestration
-- Kubeflow Pipelines for ML
-- Full observability and reliability
+Today: scheduled scripts in isolation
 
-> We are restoring what we know works.
+Tomorrow: connected workflows featuring:
+- Argo Workflows for complex orchestration
+- Kubeflow Pipelines for ML workflows
+- Full logging, retry logic, and monitoring
+
+> Visualize and monitor every step  
+> from data to deployment
+
+---
+
+<!-- Future: Kubernetes Foundation -->
+## Built on Orchestration Foundation
+
+![bg right:33%](./zone-8.png)
+
+Kubernetes: designed for workload orchestration
+- Powers modern cloud-native applications
+- Handles complex workflows with reliability
+- Already runs notebooks and CronJobs
+
+> Orchestration isn't the future -  
+> it's already here, powering The Zone
 
 ---
 
 <!-- Federated Future -->
-## A Federated Future
+## A Federated Future Awaits
 
 ![bg right:33%](./zone-10.png)
 
-The open-source design allows:
-- Deployment by other teams
-- Use by other departments
-- Adoption by other governments
+Open source by design enables:
+- Deployment by other StatCan teams
+- Adoption by federal departments
+- Provincial and municipal implementation
 
-> Same foundation. Any organization.
+> Same foundation. Same security.  
+> Deployed where you need it.
 
 ---
 
 <!-- Call to Action -->
-## Enter The Zone
+## Enter The Zone Today
 
 ![bg right:33%](./zone-11.png)
 
-You are invited to:
-- Access: zone.statcan.ca
-- Attend training workshops
-- Host the next Zone
+You are invited to join us:
+- Access the platform: zone.statcan.ca
+- Attend our training workshops
+- Help shape StatCan's data future
+- Host the next Zone in your area
 
-> The movement toward open capability.
+> The movement toward openness,  
+> sovereignty, and shared capability
