@@ -26,7 +26,6 @@ We are the team building and supporting The Zone:
 - The Advanced Analytics Workspace (AAW) was the first Zone
 - The Zone is its Protected B counterpart
 - Built on the same foundation: **Kubeflow on Kubernetes**  
-- We successfully cloned and migrated AAW to The Zone, proving full portability
 
 > Same core. Same capabilities. Higher security.
 
@@ -39,14 +38,10 @@ We are the team building and supporting The Zone:
 
 The Zone is a data science platform based on **Kubeflow**, running on **Azure AKS**, designed to orchestrate notebooks, jobs, and machine learning workflows.
 
-It provides:
-
 - Multilingual JupyterLab environments (Python, R, SAS, Julia)  
 - Secure compute for individuals and teams  
 - Scalable infrastructure for data science and automation  
 - A platform that runs on Azure but can run on any Kubernetes cluster
-
-> This is not vendor lock-in. This is sovereign infrastructure.
 
 ---
 
@@ -61,8 +56,6 @@ It provides:
 - Multilingual Jupyter kernels  
 - Migrate at your pace, in your language  
 - The only platform at StatCan where **SAS and Python/R coexist**
-
-> Protect legacy investments while growing into open source.
 
 ### Organization? No Barrier.
 
@@ -79,7 +72,7 @@ It provides:
 
 ![bg right:30%](./zone-4.png)
 
-To deliver a secure, modern, and independent alternative to commercial and foreign-hosted data platforms.
+To deliver a secure, modern, and independent data platform.
 
 - Provide a **Protected B compliant** environment for sensitive data  
 - Reduce reliance on proprietary and external tools  
@@ -135,8 +128,6 @@ Tomorrow: connected, observable workflows powered by **Argo Workflows** and **Ku
 - Full logging, retry logic, error handling, and trigger-based execution  
 - Visualize and monitor every step from data to model
 
-> Automation, elevated.
-
 ---
 
 <!-- Future: Kubeflow Pipelines -->
@@ -151,8 +142,6 @@ We are moving toward end-to-end reproducible workflows:
 - CI/CD practices applied to data science pipelines  
 - Models monitored in production, with drift detection and retraining
 
-> This is how government innovates, securely and sustainably.
-
 ---
 
 <!-- Data Access -->
@@ -166,8 +155,6 @@ Challenges remain:
 - Legacy filer performance can constrain projects  
 - Some users find Kubernetes concepts unfamiliar  
 - Org-wide secrets management still in development
-
-> We are actively addressing these with user feedback and platform updates.
 
 ---
 
@@ -199,5 +186,4 @@ You are invited to:
 - Help shape the future of data science at StatCan  
 - Host the next Zone in your department
 
-> The Zone is not just a tool.  
-> It's a movement toward openness, sovereignty, and shared capability.
+> The Zone is a movement toward openness, sovereignty, and shared capability.
