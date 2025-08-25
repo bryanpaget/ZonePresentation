@@ -178,14 +178,19 @@ style: |
 
 ![bg left:33%](./zone-0.png)
 
-- Souheil Yazji
-- Mathis Marcotte
-- Jose Matsuda
-- Wendy Gaultier
-- Bryan Paget  
+> **Featuring Justin Zhang and Anray Liu!**
 
-> **With special thanks to our co-op students 
-Justin Zhang and Anray Liu!**
+Souheil Yazji
+
+Mathis Marcotte
+
+Jose Matsuda
+
+Wendy Gaultier
+
+Bryan Paget  
+
+
 
 ---
 
