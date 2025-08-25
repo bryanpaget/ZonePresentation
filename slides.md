@@ -184,7 +184,8 @@ style: |
 - Wendy Gaultier
 - Bryan Paget  
 
-> **With special thanks to our co-op students Justin Zhang and Anray Liu**
+> **With special thanks to our co-op students 
+Justin Zhang and Anray Liu!**
 
 ---
 
