@@ -94,10 +94,12 @@ style: |
   blockquote {
     border-left: 4px solid var(--secondary-color);
     padding-left: 1rem;
-    line-height: 1.2;
+    font-size: 0.8rem;
+    line-height: 1.8;
     margin-left: 0;
     color: var(--dark-gray);
     font-style: italic;
+    font-weight: 700;
   }
   
   /* List styles */
@@ -153,7 +155,6 @@ style: |
     text-align: center;
   }
 ---
-
 <!-- Title Slide -->
 <!-- _class: lead -->
 # The Zone  
@@ -179,7 +180,9 @@ style: |
 
 ![bg left:33%](./zone-0.png)
 
-> **Featuring Justin Zhang and Anray Liu!**
+<blockquote>
+Featuring Justin Zhang and Anray Liu!
+</blockquote>
 
 <br>
 
@@ -192,8 +195,6 @@ Jose Matsuda
 Wendy Gaultier
 
 Bryan Paget  
-
-
 
 ---
 
@@ -210,8 +211,11 @@ Bryan Paget
 * Built on the same foundation:  
   **Kubeflow on Kubernetes**
 
-> **Same core. Same capabilities.
-> Higher security.**
+<blockquote>
+Same core. Same capabilities.
+<br>
+Higher security.
+</blockquote>
 
 ---
 
@@ -227,8 +231,11 @@ Featuring:
 * **JupyterLab** supporting Python, R, SAS, Julia  
 * **Kubeflow** for scalable infrastructure for data science and automation  
 
-> The Zone is a platform that runs on Azure AKS
-> but can run on any **Kubernetes** cluster.
+<blockquote>
+The Zone is a platform that runs on Azure AKS
+<br>
+but can run on any Kubernetes cluster.
+</blockquote>
 
 ---
 
@@ -270,8 +277,11 @@ To deliver a secure, modern, and independent data platform.
 * Reduce reliance on proprietary tools  
 * Long-term cost reduction through reusable, open infrastructure
 
-> **This is about sovereignty, sustainability, and
-self-reliance.**
+<blockquote>
+This is about sovereignty, sustainability, and
+<br>
+self-reliance.
+</blockquote>
 
 ---
 
@@ -287,9 +297,10 @@ self-reliance.**
 
 <br>
 
-> **This is not a prototype.**  
->
-> **This is production grade.**
+<blockquote>
+This is not a prototype.  
+This is production grade.
+</blockquote>
 
 ---
 
@@ -303,7 +314,9 @@ self-reliance.**
 * **Volume and namespace cleaners** for automatic resource cleanup  
 * **CronJobs** for scheduling our pipeline-ready infrastructure
 
-> **Smarter. Cleaner. Faster.**
+<blockquote>
+Smarter. Cleaner. Faster.
+</blockquote>
 
 ---
 
@@ -320,7 +333,9 @@ self-reliance.**
 * Kubeflow Pipelines enable end-to-end ML workflows with UI, caching, versioning  
 * Full logging, retry logic, error handling, triggers
 
-> **Automation, evolved.**
+<blockquote>
+Automation, evolved.
+</blockquote>
 
 ---
 
@@ -335,8 +350,11 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 * Handles complex workflows reliably  
 * Already runs The Zone's notebooks and jobs
 
-> **Orchestration isn't the future.**
-> **It's already here, under the hood.**
+<blockquote>
+Orchestration isn't the future.
+<br>
+It's already here, under the hood.
+</blockquote>
 
 ---
 
@@ -350,8 +368,9 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 * The AAW had **Kubeflow Pipelines**, **Argo Workflows**  
 * We can re-enable them, no reinvention needed, for end-to-end workflows: versioned, reproducible, monitored
 
-> **We're not starting from scratch.**
-> **We're restoring what works and making it secure, scalable, standard.**
+<blockquote>
+We're not starting from scratch. We're restoring what works and making it secure, scalable, standard.
+</blockquote>
 
 ---
 
@@ -366,7 +385,9 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 * Secrets management (Keycloak)
 * VS Code extension repo (org wide)
 
-> **We're solving these, with your feedback.**
+<blockquote>
+We're solving these, with your feedback.
+</blockquote>
 
 ---
 
@@ -381,9 +402,11 @@ The Zone is open source and designed to scale. It can be deployed by:
 * Federal departments 
 * Provincial and municipal governments
 
-> **Same foundation. Same security.**
->
-> **Deployed where you need it.**
+<blockquote>
+Same foundation. Same security.
+<br>
+Deployed where you need it.
+</blockquote>
 
 ---
 
@@ -399,4 +422,8 @@ You are invited to:
 * Help shape the future of data science at StatCan  
 * Host the next Zone in your department
 
-> **The Zone is a movement toward openness, sovereignty, and shared capability.**
+<blockquote>
+The Zone is a movement toward openness, sovereignty,
+<br>
+and shared capability.
+</blockquote>
