@@ -94,6 +94,7 @@ style: |
   blockquote {
     border-left: 4px solid var(--secondary-color);
     padding-left: 1rem;
+    line-height: 1.2;
     margin-left: 0;
     color: var(--dark-gray);
     font-style: italic;
@@ -180,6 +181,8 @@ style: |
 
 > **Featuring Justin Zhang and Anray Liu!**
 
+<br>
+
 Souheil Yazji
 
 Mathis Marcotte
@@ -201,12 +204,14 @@ Bryan Paget
 
 ![bg left:33%](./zone-1.png)
 
-* The Advanced Analytics Workspace (AAW) was the first Zone  
+* The Advanced Analytics Workspace (AAW)
+  was the first Zone  
 * The Zone is its Protected B counterpart  
 * Built on the same foundation:  
   **Kubeflow on Kubernetes**
 
-> **Same core. Same capabilities. Higher security.**
+> **Same core. Same capabilities.
+> Higher security.**
 
 ---
 
@@ -236,7 +241,8 @@ Featuring:
 
 * Python, R, Julia, SAS are all supported  
 * Migrate at your pace, in your language  
-* **The only platform at StatCan where SAS and Python/R coexist**
+* **The only platform at StatCan where 
+SAS and Python/R coexist**
 
 ---
 
@@ -321,7 +327,7 @@ self-reliance.**
 <!-- Future: Kubernetes Is Built for Orchestration -->
 ## Kubernetes Is Built for Orchestration
 
-![bg left:16%](./zone-9.png)
+![bg left:33%](./zone-9.png)
 
 At its core, **Kubernetes is designed to orchestrate workloads**: scaling, scheduling, and managing containers across clusters.
 
@@ -330,7 +336,6 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 * Already runs The Zone's notebooks and jobs
 
 > **Orchestration isn't the future.**
->
 > **It's already here, under the hood.**
 
 ---
@@ -338,16 +343,14 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 <!-- Future: Kubeflow Brings Orchestration to Data Science -->
 ## Kubeflow Brings Orchestration to Data Scientists
 
-![bg left:16%](./zone-9.png)
+![bg left:33%](./zone-9.png)
 
-**Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists through a clean, intuitive interface.
+**Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists through an intuitive interface.
 
-* The AAW used **Kubeflow Pipelines** and **Argo Workflows**  
-* We can re-enable them in The Zone, no reinvention needed  
-* End-to-end workflows: versioned, reproducible, monitored
+* The AAW had **Kubeflow Pipelines**, **Argo Workflows**  
+* We can re-enable them, no reinvention needed, for end-to-end workflows: versioned, reproducible, monitored
 
 > **We're not starting from scratch.**
->
 > **We're restoring what works and making it secure, scalable, standard.**
 
 ---
