@@ -315,7 +315,7 @@ This is production grade.
 * **Volume and namespace cleaners** for automatic resource cleanup  
 * **CronJobs** for scheduling our pipeline-ready infrastructure
 * **Readiness Probe**: no more loading errors
-* **Optmized Docker** images for faster load times 
+* **Optimized Docker** images for faster load times 
 
 ---
 
