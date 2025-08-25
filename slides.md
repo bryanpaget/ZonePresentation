@@ -272,6 +272,8 @@ To deliver a secure, modern, and independent data platform.
 * CronJobs powering real production workflows  
 * A stable, proven platform used across divisions
 
+<br>
+
 > **This is not a prototype.**  
 > **This is production grade.**
 
@@ -311,7 +313,7 @@ To deliver a secure, modern, and independent data platform.
 <!-- Future: Kubernetes Is Built for Orchestration -->
 ## Kubernetes Is Built for Orchestration
 
-![bg left:16%](./canada-0.png)
+![bg left:16%](./zone-9.png)
 
 At its core, **Kubernetes is designed to orchestrate workloads**: scaling, scheduling, and managing containers across clusters.
 
@@ -327,7 +329,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 <!-- Future: Kubeflow Brings Orchestration to Data Science -->
 ## Kubeflow Brings Orchestration to Data Scientists
 
-![bg left:16%](./canada-0.png)
+![bg left:16%](./zone-9.png)
 
 **Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists through a clean, intuitive interface.
 
