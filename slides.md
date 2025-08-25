@@ -71,6 +71,10 @@ style: |
     margin-bottom: var(--element-margin);
     margin-top: 0;
   }
+
+  h6 {
+      margin-top: 0.1rem;
+  }
   
   /* Paragraph styles */
   p {
@@ -93,7 +97,7 @@ style: |
   /* Blockquote styles */
   blockquote {
     border-left: 4px solid var(--secondary-color);
-    padding-left: 1rem;
+    margin-bottom: 1.1rem;
     font-size: 0.8rem;
     line-height: 1.8;
     margin-left: 0;
@@ -160,10 +164,9 @@ style: |
 # The Zone  
 ### A Modern Data Science Platform 
 
-<br>
-
 #### For Statistics Canada
 
+<br>
 <br>
 <br>
 <br>
@@ -181,20 +184,16 @@ style: |
 ![bg left:33%](./zone-0.png)
 
 <blockquote>
-Featuring Justin Zhang and Anray Liu!
+Featuring Anray Liu and Justin Zhang!
+
+Co-op student developers from uOttawa and Carleton
 </blockquote>
 
-<br>
+###### Developers (IT-02):
+- Wendy Gaultier, Mathis Marcotte, Jose Matsuda, Souheil Yazji
 
-Souheil Yazji
-
-Mathis Marcotte
-
-Jose Matsuda
-
-Wendy Gaultier
-
-Bryan Paget  
+###### Team Lead (Acting IT-03):
+- Bryan Paget
 
 ---
 
@@ -251,6 +250,8 @@ but can run on any Kubernetes cluster.
 * **The only platform at StatCan where 
 SAS and Python/R coexist**
 
+![](./languages.png)
+
 ---
 
 <!-- Inclusivity & SAS Coexistence -->
@@ -290,7 +291,7 @@ self-reliance.
 
 ![bg left:33%](./zone-5.png)
 
-* Over 2,200 users  
+* Over 2,200 onboarded users  
 * 130+ daily notebook sessions  
 * CronJobs powering real production workflows  
 * A stable, proven platform used across divisions
@@ -310,13 +311,11 @@ This is production grade.
 ![bg left:33%](./zone-8.png)
 
 * **MKL** acceleration for faster numerical computing  
-* Tesseract **OCR** to extract text from scanned documents  
+* **Tesseract OCR** to extract text from scanned documents
 * **Volume and namespace cleaners** for automatic resource cleanup  
 * **CronJobs** for scheduling our pipeline-ready infrastructure
-
-<blockquote>
-Smarter. Cleaner. Faster.
-</blockquote>
+* **Readiness Probe**: no more loading errors
+* **Optmized Docker** images for faster load times 
 
 ---
 
@@ -379,9 +378,9 @@ We're not starting from scratch. We're restoring what works and making it secure
 
 ![bg left:33%](./zone-9.png)
 
-* Database onboarding (network policies)  
+* Database onboarding (workorder intake forms)  
 * Legacy filer performance (data migration)  
-* Kubernetes concepts (education)  
+* Linux and Kubernetes concepts (education)  
 * Secrets management (Keycloak)
 * VS Code extension repo (org wide)
 
