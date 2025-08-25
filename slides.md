@@ -259,7 +259,8 @@ To deliver a secure, modern, and independent data platform.
 * Reduce reliance on proprietary tools  
 * Long-term cost reduction through reusable, open infrastructure
 
-> **This is about sovereignty, sustainability, and self-reliance.**
+> **This is about sovereignty, sustainability, and
+self-reliance.**
 
 ---
 
@@ -276,6 +277,7 @@ To deliver a secure, modern, and independent data platform.
 <br>
 
 > **This is not a prototype.**  
+>
 > **This is production grade.**
 
 ---
@@ -323,6 +325,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 * Already runs The Zone's notebooks and jobs
 
 > **Orchestration isn't the future.**
+>
 > **It's already here, under the hood.**
 
 ---
@@ -339,6 +342,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 * End-to-end workflows: versioned, reproducible, monitored
 
 > **We're not starting from scratch.**
+>
 > **We're restoring what works and making it secure, scalable, standard.**
 
 ---
@@ -370,6 +374,7 @@ The Zone is open source and designed to scale. It can be deployed by:
 * Provincial and municipal governments
 
 > **Same foundation. Same security.**
+>
 > **Deployed where you need it.**
 
 ---
