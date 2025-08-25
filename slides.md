@@ -167,7 +167,7 @@ style: |
 <br>
 
 ###### *Brought to you by The Zone Team :heart:*
-![bg left:33%](./canada-0.png)
+![bg left:33%](./canada-1.png)
 
 ---
 
