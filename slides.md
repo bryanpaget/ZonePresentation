@@ -157,8 +157,13 @@ style: |
 <!-- _class: lead -->
 # The Zone  
 ### A Modern Data Science Platform 
+
+<br>
+
 #### For Statistics Canada
 
+<br>
+<br>
 <br>
 
 ###### *Brought to you by The Zone Team :heart:*
@@ -275,7 +280,7 @@ To deliver a secure, modern, and independent data platform.
 <!-- Summer 2025 -->
 ## Summer 2025
 
-![bg left:33%](./zone-5.png)
+![bg left:33%](./zone-8.png)
 
 * **MKL** acceleration for faster numerical computing  
 * Tesseract **OCR** to extract text from scanned documents  
@@ -322,7 +327,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 <!-- Future: Kubeflow Brings Orchestration to Data Science -->
 ## Kubeflow Brings Orchestration to Data Scientists
 
-![bg left:14%](./canada-0.png)
+![bg left:16%](./canada-0.png)
 
 **Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists through a clean, intuitive interface.
 
@@ -340,10 +345,11 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 
 ![bg left:33%](./zone-9.png)
 
-* Database onboarding: slow (network policies)  
-* Legacy filer performance: limiting (data migration)  
-* Kubernetes concepts: unfamiliar (education)  
-* Secrets management: in progress (Keycloak)
+* Database onboarding (network policies)  
+* Legacy filer performance (data migration)  
+* Kubernetes concepts (education)  
+* Secrets management (Keycloak)
+* VS Code extension repo (org wide)
 
 > **We're solving these, with your feedback.**
 
@@ -357,7 +363,7 @@ At its core, **Kubernetes is designed to orchestrate workloads**: scaling, sched
 The Zone is open source and designed to scale. It can be deployed by:
 
 * Other teams at StatCan  
-* Federal departments  
+* Federal departments 
 * Provincial and municipal governments
 
 > **Same foundation. Same security.**
