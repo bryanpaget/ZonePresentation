@@ -4,12 +4,10 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,20 +16,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
-
       - name: Build PDFs
         run: |
           marp slides-en.md --pdf --output slides-en.pdf --allow-local-files
           marp slides-fr.md --pdf --output slides-fr.pdf --allow-local-files
-
       - name: Verify PDFs exist
         id: verify
         run: |
@@ -42,7 +36,6 @@ jobs:
             echo "PDFs not built!"
             exit 1
           fi
-
       - name: Upload PDFs artifact
         uses: actions/upload-artifact@v4
         with:
@@ -50,7 +43,6 @@ jobs:
           path: |
             slides-en.pdf
             slides-fr.pdf
-
   publish:
     needs: build
     environment:
@@ -60,10 +52,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Create output directories
         run: mkdir -p public
-
       # ———————————————————————
       # Generate English HTML (for GitHub Pages)
       # ———————————————————————
@@ -74,30 +64,28 @@ jobs:
             --html \
             --output public/index.html \
             --allow-local-files \
-
+      # Copy images to public directory
+      - name: Copy images to public directory
+        run: |
+          cp *.png public/ || true
       - name: List public directory
         run: ls -la public/
-
       - name: Verify HTML was generated
         run: |
           if [ ! -f public/index.html ]; then
             echo "HTML not generated!"
             exit 1
           fi
-
       # Upload only HTML site to GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
   release:
     needs: [build, publish]
     runs-on: ubuntu-latest
@@ -110,7 +98,6 @@ jobs:
         with:
           name: slides-pdfs
           path: .
-
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
