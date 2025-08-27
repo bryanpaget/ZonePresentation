@@ -16,24 +16,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Cache Node.js modules
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
+        
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "18"
-          cache: "npm"
-
+          
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
-
+        
       - name: Create combined markdown files
         run: |
           # Create temp directory
@@ -42,12 +33,12 @@ jobs:
           cat config/header.md content/slides-en.md > temp/slides-en-combined.md
           # Combine header + content for French
           cat config/header.md content/slides-fr.md > temp/slides-fr-combined.md
-
+          
       - name: Build PDFs
         run: |
           marp temp/slides-en-combined.md --pdf --output slides-en.pdf --allow-local-files
           marp temp/slides-fr-combined.md --pdf --output slides-fr.pdf --allow-local-files
-
+          
       - name: Verify PDFs exist
         id: verify
         run: |
@@ -58,7 +49,7 @@ jobs:
             echo "PDFs not built!"
             exit 1
           fi
-
+          
       - name: Upload PDFs artifact
         uses: actions/upload-artifact@v4
         with:
@@ -67,7 +58,7 @@ jobs:
             slides-en.pdf
             slides-fr.pdf
           retention-days: 30
-
+          
   publish:
     needs: build
     environment:
@@ -77,67 +68,58 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Cache Node.js modules
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
+        
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "18"
-          cache: "npm"
-
+          
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
-
+        
       - name: Create output directories
         run: |
           mkdir -p public
           mkdir -p public/img
-
+          
       - name: Copy images to public directory
         run: cp -r img/* public/img/
-
+        
       - name: Create combined markdown files
         run: |
           mkdir -p temp
           cat config/header.md content/slides-en.md > temp/slides-en-combined.md
           cat config/header.md content/slides-fr.md > temp/slides-fr-combined.md
-
+          
       - name: Generate English HTML
         run: |
           marp temp/slides-en-combined.md \
             --html \
             --output public/index.html \
             --allow-local-files
-
+            
       - name: Generate French HTML
         run: |
           marp temp/slides-fr-combined.md \
             --html \
             --output public/fr.html \
             --allow-local-files
-
+            
       - name: List public directory
         run: ls -la public/
-
+        
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
-
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
+        
   release:
     needs: [build, publish]
     runs-on: ubuntu-latest
@@ -150,7 +132,7 @@ jobs:
         with:
           name: slides-pdfs
           path: .
-
+          
       - name: Generate changelog
         id: changelog
         run: |
@@ -160,7 +142,7 @@ jobs:
           echo "CHANGELOG<<EOF" >> $GITHUB_OUTPUT
           echo "$changelog" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
-
+          
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
