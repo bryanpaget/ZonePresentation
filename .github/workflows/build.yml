@@ -29,7 +29,7 @@ jobs:
 
       - name: Build PDFs
         run: |
-          marp slides.md --pdf --output slides-en.pdf --allow-local-files
+          marp slides-en.md --pdf --output slides-en.pdf --allow-local-files
           marp slides-fr.md --pdf --output slides-fr.pdf --allow-local-files
 
       - name: Verify PDFs exist
@@ -70,7 +70,7 @@ jobs:
       - name: Convert English Markdown to HTML
         run: |
           npm install -g @marp-team/marp-cli
-          marp slides.md \
+          marp slides-en.md \
             --html \
             --output public/index.html \
             --allow-local-files \

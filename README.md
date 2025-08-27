@@ -1,4 +1,9 @@
+[English](#english) | [Français](#français)
+
+<a id="english"></a>
+
 # The Zone: A Modern Data Science Platform  
+
 *Secure. Unified. Scalable.*
 
 <img src="./zone-1.png" width="320">
@@ -24,5 +29,43 @@ We've already **proven portability** by cloning and migrating from AAW to The Zo
 ---
 
 ## **Join the Future of Analytics at StatCan**  
-🔗 [https://zone.statcan.ca](https://zone.statcan.ca)  
+
+🔗 [Releases](https://github.com/bryanpaget/ZonePresentation/releases) | [https://zone.statcan.ca](https://zone.statcan.ca)  
+
 🚀 *You could host the next Zone.*
+
+---
+
+<a id="français"></a>
+
+# La Zone : Une plateforme de science des données moderne  
+
+*Sécurisée. Unifiée. Évolutive.*
+
+<img src="./zone-1.png" width="320">
+
+## Une plateforme pour tous les travaux de science des données
+
+La Zone réunit **Python, R, SAS et plus encore** dans un environnement unique et sécurisé construit sur **Kubeflow et Azure AKS**. Que vous exécutiez des notebooks, automatisiez des tâches ou construisiez des modèles, tout se trouve au même endroit, **plus de silos, plus de friction**.
+
+## Pont unique entre le passé et le futur
+
+C'est la **seule plateforme à StatCan où SAS et l'open source coexistent**. Cela signifie que les équipes peuvent protéger leurs investissements dans le code existant tout en adoptant en toute sécurité des outils et pratiques modernes, le tout dans un environnement Protégé B.
+
+## Conçu pour évoluer à travers les équipes et les organisations
+
+Nous avons déjà **prouvé la portabilité** en clonant et migrant de l'AAW vers La Zone. Maintenant, nous préparons l'avenir fédéré : une plateforme ouverte et réutilisable qui peut être adoptée en toute sécurité par les ministères à travers le gouvernement, **même fondation, domaines différents**.
+
+---
+
+> ✅ **2 200+ utilisateurs**  
+> 🚀 **Prêt pour les pipelines MLOps à grande échelle**  
+> 🔐 **Sécurisé, souverain et open source**
+
+---
+
+## **Rejoignez l'avenir de l'analyse à StatCan**  
+
+🔗 [Versions](https://github.com/bryanpaget/ZonePresentation/releases) | [https://zone.statcan.ca](https://zone.statcan.ca)  
+
+🚀 *Vous pourriez héberger la prochaine Zone.*
