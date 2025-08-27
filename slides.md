@@ -385,7 +385,7 @@ We're not starting from scratch. We're restoring what works and making it secure
 
 ![bg left:33%](./zone-9.png)
 
-- Database connections (workorder intake forms)  
+- Database connections (workload intake forms)  
 - Legacy filer performance (data migration)  
 - Linux and Kubernetes concepts (education)  
 - Secrets management (Keycloak)
