@@ -6,7 +6,7 @@
 
 *Secure. Unified. Scalable.*
 
-<img src="./zone-1.png" width="320">
+<img src="./img/zone-1.png" width="320">
 
 ## One Platform for All Data Science Work
 
