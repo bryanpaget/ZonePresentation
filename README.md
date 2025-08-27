@@ -42,7 +42,7 @@ We've already **proven portability** by cloning and migrating from AAW to The Zo
 
 *Sécurisée. Unifiée. Évolutive.*
 
-<img src="./zone-1.png" width="320">
+<img src="./img/zone-1.png" width="320">
 
 ## Une plateforme pour tous les travaux de science des données
 
