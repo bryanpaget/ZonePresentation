@@ -1,9 +1,9 @@
 name: Deploy Marp Slides to GitHub Pages
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 permissions:
   contents: read
   pages: write
@@ -16,16 +16,31 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
+
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
+
+      - name: Create combined markdown files
+        run: |
+          # Create temp directory
+          mkdir -p temp
+
+          # Combine header + content for English
+          cat config/header.md content/slides-en.md > temp/slides-en-combined.md
+
+          # Combine header + content for French
+          cat config/header.md content/slides-fr.md > temp/slides-fr-combined.md
+
       - name: Build PDFs
         run: |
-          marp slides-en.md --pdf --output slides-en.pdf --allow-local-files
-          marp slides-fr.md --pdf --output slides-fr.pdf --allow-local-files
+          marp temp/slides-en-combined.md --pdf --output slides-en.pdf --allow-local-files
+          marp temp/slides-fr-combined.md --pdf --output slides-fr.pdf --allow-local-files
+
       - name: Verify PDFs exist
         id: verify
         run: |
@@ -36,6 +51,7 @@ jobs:
             echo "PDFs not built!"
             exit 1
           fi
+
       - name: Upload PDFs artifact
         uses: actions/upload-artifact@v4
         with:
@@ -43,6 +59,7 @@ jobs:
           path: |
             slides-en.pdf
             slides-fr.pdf
+
   publish:
     needs: build
     environment:
@@ -52,40 +69,58 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install Marp CLI
+        run: npm install -g @marp-team/marp-cli
+
       - name: Create output directories
-        run: mkdir -p public
-      # ———————————————————————
-      # Generate English HTML (for GitHub Pages)
-      # ———————————————————————
-      - name: Convert English Markdown to HTML
         run: |
-          npm install -g @marp-team/marp-cli
-          marp slides-en.md \
+          mkdir -p public
+          mkdir -p public/img
+
+      - name: Copy images to public directory
+        run: cp -r img/* public/img/
+
+      - name: Create combined markdown files
+        run: |
+          mkdir -p temp
+          cat config/header.md content/slides-en.md > temp/slides-en-combined.md
+          cat config/header.md content/slides-fr.md > temp/slides-fr-combined.md
+
+      - name: Generate English HTML
+        run: |
+          marp temp/slides-en-combined.md \
             --html \
             --output public/index.html \
-            --allow-local-files \
-      # Copy images to public directory
-      - name: Copy images to public directory
+            --allow-local-files
+
+      - name: Generate French HTML
         run: |
-          cp *.png public/ || true
+          marp temp/slides-fr-combined.md \
+            --html \
+            --output public/fr.html \
+            --allow-local-files
+
       - name: List public directory
         run: ls -la public/
-      - name: Verify HTML was generated
-        run: |
-          if [ ! -f public/index.html ]; then
-            echo "HTML not generated!"
-            exit 1
-          fi
-      # Upload only HTML site to GitHub Pages
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
   release:
     needs: [build, publish]
     runs-on: ubuntu-latest
@@ -98,6 +133,7 @@ jobs:
         with:
           name: slides-pdfs
           path: .
+
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
