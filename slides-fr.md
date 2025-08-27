@@ -384,7 +384,7 @@ Nous ne repartons pas de zéro. Nous rétablissons ce qui fonctionne, en le rend
 
 ![bg left:33%](./zone-9.png)
 
-- Connexions aux bases de données (formulaires de demande)  
+- Connexions aux bases de données (WIFs)  
 - Performances des anciens serveurs de fichiers (migration des données)  
 - Concepts Linux et Kubernetes (formation)  
 - Gestion des secrets (Keycloak)  
