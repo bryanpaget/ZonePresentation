@@ -11,7 +11,7 @@
 <br>
 
 ###### *Présenté par l'équipe de La Zone :heart:*
-![bg left:33%](img/canada-1.png)
+![bg left:33%](./img/canada-1.png)
 
 ---
 
@@ -20,7 +20,7 @@
 
 **Été 2025**
 
-![bg left:33%](img/zone-0.png)
+![bg left:33%](./img/zone-0.png)
 
 <blockquote>
 Avec Anray Liu et Justin Zhang !
@@ -41,7 +41,7 @@ Stagiaires développeurs de l'Université d'Ottawa et de Carleton
 
 **Une plateforme, deux zones**
 
-![bg left:33%](img/zone-1.png)
+![bg left:33%](./img/zone-1.png)
 
 - L’Espace d’analytique avancée (EAA)
   était la première Zone
@@ -60,7 +60,7 @@ Sécurité accrue.
 <!-- Qu'est-ce que La Zone ? -->
 ## Qu'est-ce que La Zone ?
 
-![bg left:33%](img/zone-1.png)
+![bg left:33%](./img/zone-1.png)
 
 La Zone est une plateforme de science des données basée sur **Kubeflow**, conçue pour orchestrer des notebooks, des tâches et des flux de travail en apprentissage machine.
 
@@ -80,7 +80,7 @@ mais peut s'exécuter sur n'importe quel cluster Kubernetes.
 <!-- Inclusivité et coexistence SAS -->
 ## Bienvenue à tous
 
-![bg left:33%](img/zone-3.png)
+![bg left:33%](./img/zone-3.png)
 
 ### Et la langue ? Aucune barrière.
 
@@ -89,14 +89,14 @@ mais peut s'exécuter sur n'importe quel cluster Kubernetes.
 - **La seule plateforme à StatCan où
 SAS et Python/R coexistent**
 
-![](img/languages.png)
+![](./img/languages.png)
 
 ---
 
 <!-- Inclusivité et coexistence organisationnelle -->
 ## Bienvenue à tous
 
-![bg left:33%](img/zone-3.png)
+![bg left:33%](./img/zone-3.png)
 
 ### Et l'organisation ? Aucune barrière.
 
@@ -109,7 +109,7 @@ SAS et Python/R coexistent**
 <!-- Pourquoi La Zone a-t-elle été créée ? -->
 ## Pourquoi La Zone a-t-elle été créée ?
 
-![bg left:33%](img/zone-5.png)
+![bg left:33%](./img/zone-5.png)
 
 Pour offrir une plateforme de données sécurisée, moderne et autonome.
 
@@ -127,7 +127,7 @@ et d'autonomie.
 <!-- Ce que nous avons construit -->
 ## Ce que nous avons construit
 
-![bg left:33%](img/zone-5.png)
+![bg left:33%](./img/zone-5.png)
 
 - Plus de 2 200 utilisateurs intégrés
 - Plus de 130 sessions de notebook par jour
@@ -146,7 +146,7 @@ C'est une plateforme de production.
 <!-- Été 2025 -->
 ## Été 2025
 
-![bg left:33%](img/zone-8.png)
+![bg left:33%](./img/zone-8.png)
 
 - Accélération **MKL** pour un calcul numérique plus rapide
 - **Tesseract OCR** pour extraire du texte de documents scannés
@@ -160,7 +160,7 @@ C'est une plateforme de production.
 <!-- Des CronJobs aux pipelines -->
 ## Des CronJobs aux pipelines
 
-![bg left:33%](img/zone-8.png)
+![bg left:33%](./img/zone-8.png)
 
 **Aujourd'hui :** Les CronJobs s'exécutent de façon isolée.
 
@@ -179,7 +179,7 @@ L'automatisation, en évolution.
 <!-- Kubernetes est conçu pour l'orchestration -->
 ## Kubernetes est conçu pour l'orchestration
 
-![bg left:33%](img/zone-9.png)
+![bg left:33%](./img/zone-9.png)
 
 En son cœur, **Kubernetes est conçu pour orchestrer les charges de travail** : mise à l'échelle, planification et gestion des conteneurs sur des clusters.
 
@@ -198,7 +198,7 @@ Elle est déjà là, sous le capot.
 <!-- Kubeflow amène l'orchestration aux scientifiques des données -->
 ## Kubeflow amène l'orchestration aux scientifiques des données
 
-![bg left:33%](img/zone-9.png)
+![bg left:33%](./img/zone-9.png)
 
 **Kubeflow a été conçu pour les pipelines.** Il met la puissance de Kubernetes à la portée des scientifiques des données via une interface intuitive.
 
@@ -214,7 +214,7 @@ Nous ne repartons pas de zéro. Nous rétablissons ce qui fonctionne, en le rend
 <!-- Problèmes restants -->
 ## Des défis persistent
 
-![bg left:33%](img/zone-9.png)
+![bg left:33%](./img/zone-9.png)
 
 - Connexions aux bases de données (WIFs)
 - Performances des anciens serveurs de fichiers (migration des données)
@@ -231,7 +231,7 @@ Nous travaillons à les résoudre, grâce à vos commentaires.
 <!-- Avenir fédéré -->
 ## Un avenir fédéré
 
-![bg left:33%](img/zone-10.png)
+![bg left:33%](./img/zone-10.png)
 
 La Zone est open source et conçue pour s'agrandir. Elle peut être déployée par :
 
@@ -250,7 +250,7 @@ Déployée là où vous en avez besoin.
 <!-- Appel à l'action -->
 ## Entrez dans La Zone
 
-![bg left:33%](img/zone-10.png)
+![bg left:33%](./img/zone-10.png)
 
 Vous êtes invités à :
 

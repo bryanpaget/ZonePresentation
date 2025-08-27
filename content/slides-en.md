@@ -11,7 +11,7 @@
 <br>
 
 ###### *Brought to you by The Zone Team :heart:*
-![bg left:33%](./canada-1.png)
+![bg left:33%](./img/canada-1.png)
 
 ---
 
@@ -20,7 +20,7 @@
 
 **Summer 2025**
 
-![bg left:33%](./zone-0.png)
+![bg left:33%](./img/zone-0.png)
 
 <blockquote>
 Featuring Anray Liu and Justin Zhang!
@@ -41,7 +41,7 @@ Co-op student developers from uOttawa and Carleton
 
 **One Platform, Two Zones**
 
-![bg left:33%](./zone-1.png)
+![bg left:33%](./img/zone-1.png)
 
 - The Advanced Analytics Workspace (AAW)
   was the first Zone
@@ -60,7 +60,7 @@ Higher security.
 <!-- What is The Zone? -->
 ## What Is The Zone?
 
-![bg left:33%](./zone-1.png)
+![bg left:33%](./img/zone-1.png)
 
 The Zone is a data science platform based on **Kubeflow**, designed to orchestrate notebooks, jobs, and machine learning workflows.
 
@@ -80,7 +80,7 @@ but can run on any Kubernetes cluster.
 <!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
-![bg left:33%](./zone-3.png)
+![bg left:33%](./img/zone-3.png)
 
 ### Which Language? No Barrier.
 
@@ -89,14 +89,14 @@ but can run on any Kubernetes cluster.
 - **The only platform at StatCan where
 SAS and Python/R coexist**
 
-![](./languages.png)
+![](./img/languages.png)
 
 ---
 
 <!-- Inclusivity & SAS Coexistence -->
 ## Everyone Is Welcome
 
-![bg left:33%](./zone-3.png)
+![bg left:33%](./img/zone-3.png)
 
 ### Which Organization? No Barrier.
 
@@ -109,7 +109,7 @@ SAS and Python/R coexist**
 <!-- Why Created -->
 ## Why Was The Zone Created?
 
-![bg left:33%](./zone-5.png)
+![bg left:33%](./img/zone-5.png)
 
 To deliver a secure, modern, and independent data platform.
 
@@ -128,7 +128,7 @@ self-reliance.
 <!-- Platform Strengths -->
 ## What We've Built
 
-![bg left:33%](./zone-5.png)
+![bg left:33%](./img/zone-5.png)
 
 - Over 2,200 onboarded users
 - 130+ daily notebook sessions
@@ -147,7 +147,7 @@ This is production grade.
 <!-- Summer 2025 -->
 ## Summer 2025
 
-![bg left:33%](./zone-8.png)
+![bg left:33%](./img/zone-8.png)
 
 - **MKL** acceleration for faster numerical computing
 - **Tesseract OCR** to extract text from scanned documents
@@ -161,7 +161,7 @@ This is production grade.
 <!-- From Cron to Pipeline -->
 ## From CronJobs to Pipelines
 
-![bg left:33%](./zone-8.png)
+![bg left:33%](./img/zone-8.png)
 
 **Today:** CronJobs run in isolation.
 
@@ -180,7 +180,7 @@ Automation, evolved.
 <!-- Future: Kubernetes Is Built for Orchestration -->
 ## Kubernetes Is Built for Orchestration
 
-![bg left:33%](./zone-9.png)
+![bg left:33%](./img/zone-9.png)
 
 At its core, **Kubernetes is designed to orchestrate workloads**: scaling, scheduling, and managing containers across clusters.
 
@@ -199,7 +199,7 @@ It's already here, under the hood.
 <!-- Future: Kubeflow Brings Orchestration to Data Science -->
 ## Kubeflow Brings Orchestration to Data Scientists
 
-![bg left:33%](./zone-9.png)
+![bg left:33%](./img/zone-9.png)
 
 **Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists through an intuitive interface.
 
@@ -215,7 +215,7 @@ We're not starting from scratch. We're restoring what works and making it secure
 <!-- Data Access -->
 ## Challenges Remain
 
-![bg left:33%](./zone-9.png)
+![bg left:33%](./img/zone-9.png)
 
 - Database connections (workload intake forms)
 - Legacy filer performance (data migration)
@@ -232,7 +232,7 @@ We're solving these, with your feedback.
 <!-- Portability & Federated Future -->
 ## A Federated Future
 
-![bg left:33%](./zone-10.png)
+![bg left:33%](./img/zone-10.png)
 
 The Zone is open source and designed to scale. It can be deployed by:
 
@@ -251,7 +251,7 @@ Deployed where you need it.
 <!-- Call to Action -->
 ## Enter The Zone
 
-![bg left:33%](./zone-10.png)
+![bg left:33%](./img/zone-10.png)
 
 You are invited to:
 
