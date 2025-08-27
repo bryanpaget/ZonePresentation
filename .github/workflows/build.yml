@@ -11,11 +11,10 @@ permissions:
   id-token: write
 
 jobs:
-  publish:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
+    outputs:
+      pdfs-built: ${{ steps.verify.outputs.pdfs-built }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -28,6 +27,40 @@ jobs:
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
 
+      - name: Build PDFs
+        run: |
+          marp slides.md --pdf --output slides-en.pdf --allow-local-files
+          marp slides-fr.md --pdf --output slides-fr.pdf --allow-local-files
+
+      - name: Verify PDFs exist
+        id: verify
+        run: |
+          if [ -f slides-en.pdf ] && [ -f slides-fr.pdf ]; then
+            echo "pdfs-built=true" >> $GITHUB_OUTPUT
+            echo "PDFs built successfully"
+          else
+            echo "PDFs not built!"
+            exit 1
+          fi
+
+      - name: Upload PDFs artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: slides-pdfs
+          path: |
+            slides-en.pdf
+            slides-fr.pdf
+
+  publish:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Create output directories
         run: mkdir -p public
 
@@ -36,19 +69,11 @@ jobs:
       # ———————————————————————
       - name: Convert English Markdown to HTML
         run: |
+          npm install -g @marp-team/marp-cli
           marp slides.md \
             --html \
             --output public/index.html \
-            --config-file marp-config.yml \
             --allow-local-files \
-            --css ./statcan.css
-
-      # Optional: Copy assets needed for HTML rendering
-      - name: Copy images and CSS to public
-        run: |
-          mkdir -p public/images
-          cp ./*.png public/ || echo "No PNGs copied"
-          cp ./statcan.css public/ || echo "CSS copied"
 
       - name: List public directory
         run: ls -la public/
@@ -59,14 +84,6 @@ jobs:
             echo "HTML not generated!"
             exit 1
           fi
-
-      # ———————————————————————
-      # Prepare PDFs (not published to Pages)
-      # ———————————————————————
-      - name: Build English and French PDFs
-        run: |
-          marp slides.md --pdf --output slides-en.pdf --config-file marp-config.yml --allow-local-files --css ./statcan.css
-          marp slides-fr.md --pdf --output slides-fr.pdf --config-file marp-config.yml --allow-local-files --css ./statcan.css
 
       # Upload only HTML site to GitHub Pages
       - name: Setup Pages
@@ -82,17 +99,17 @@ jobs:
         uses: actions/deploy-pages@v4
 
   release:
-    needs: publish
+    needs: [build, publish]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     permissions:
       contents: write
     steps:
-      - name: Build PDFs again (or restore from workspace if caching)
-        run: |
-          npm install -g @marp-team/marp-cli
-          marp slides.md --pdf --output slides-en.pdf --config-file marp-config.yml --allow-local-files --css ./statcan.css
-          marp slides-fr.md --pdf --output slides-fr.pdf --config-file marp-config.yml --allow-local-files --css ./statcan.css
+      - name: Download PDFs artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: slides-pdfs
+          path: .
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
@@ -104,7 +121,7 @@ jobs:
             Commit: ${{ github.sha }}
             ## Files
             - `slides-en.pdf`: English version
-            - `slides-fr.pdf`: French version (upon request)
+            - `slides-fr.pdf`: French version
           files: |
             slides-en.pdf
             slides-fr.pdf
