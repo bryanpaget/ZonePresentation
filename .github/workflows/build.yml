@@ -17,10 +17,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "18"
+          cache: "npm"
 
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
@@ -29,10 +38,8 @@ jobs:
         run: |
           # Create temp directory
           mkdir -p temp
-
           # Combine header + content for English
           cat config/header.md content/slides-en.md > temp/slides-en-combined.md
-
           # Combine header + content for French
           cat config/header.md content/slides-fr.md > temp/slides-fr-combined.md
 
@@ -59,6 +66,7 @@ jobs:
           path: |
             slides-en.pdf
             slides-fr.pdf
+          retention-days: 30
 
   publish:
     needs: build
@@ -70,10 +78,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "18"
+          cache: "npm"
 
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
@@ -134,17 +151,43 @@ jobs:
           name: slides-pdfs
           path: .
 
+      - name: Generate changelog
+        id: changelog
+        run: |
+          # Get the last 5 commits
+          changelog=$(git log --oneline -5)
+          # Format the changelog for the release body
+          echo "CHANGELOG<<EOF" >> $GITHUB_OUTPUT
+          echo "$changelog" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ github.run_number }}
           name: The Zone Presentation v${{ github.run_number }}
           body: |
-            Automated release of The Zone presentation.
-            Commit: ${{ github.sha }}
-            ## Files
-            - `slides-en.pdf`: English version
-            - `slides-fr.pdf`: French version
+            # Welcome to The Zone Presentation!
+
+            Dear Zone Friends,
+
+            We're pleased to share the latest version of our presentation on The Zone - Statistics Canada's modern data science platform. This release represents our ongoing commitment to providing innovative, secure, and efficient tools for data science across the organization.
+
+            ## What's Included
+            - `slides-en.pdf`: English version of the presentation
+            - `slides-fr.pdf`: French version of the presentation
+
+            ## Recent Updates
+            ${{ steps.changelog.outputs.CHANGELOG }}
+
+            ## Acknowledgments
+            This presentation is the result of collaborative efforts across multiple teams. We extend our gratitude to everyone who contributed their time, expertise, and feedback to make this resource possible.
+
+            ## Questions or Feedback?
+            For any questions about The Zone or this presentation, please reach out to The Zone Team. We're always happy to discuss how this platform can support your data science initiatives.
+
+            ---
+            *This release was automatically generated on $(date +%Y-%m-%d)*
           files: |
             slides-en.pdf
             slides-fr.pdf
