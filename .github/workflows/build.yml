@@ -34,6 +34,11 @@ jobs:
           # Combine header + content for French
           cat config/header.md content/slides-fr.md > temp/slides-fr-combined.md
           
+      - name: Copy images to temp directory
+        run: |
+          # Copy img directory to temp for PDF generation
+          cp -r img temp/
+          
       - name: Build PDFs
         run: |
           marp temp/slides-en-combined.md --pdf --output slides-en.pdf --allow-local-files
@@ -91,6 +96,11 @@ jobs:
           cat config/header.md content/slides-en.md > temp/slides-en-combined.md
           cat config/header.md content/slides-fr.md > temp/slides-fr-combined.md
           
+      - name: Copy images to temp directory
+        run: |
+          # Copy img directory to temp for HTML generation
+          cp -r img temp/
+          
       - name: Generate English HTML
         run: |
           marp temp/slides-en-combined.md \
@@ -140,21 +150,15 @@ jobs:
           name: The Zone Presentation v${{ github.run_number }}
           body: |
             # Welcome to The Zone Presentation!
-
             Dear Zone Friends,
-
             We're pleased to share the latest version of our presentation on The Zone - Statistics Canada's modern data science platform. This release represents our ongoing commitment to providing innovative, secure, and efficient tools for data science across the organization.
-
             ## What's Included
             - `slides-en.pdf`: English version of the presentation
             - `slides-fr.pdf`: French version of the presentation
-
             ## Acknowledgments
             This presentation is the result of collaborative efforts across multiple teams. We extend our gratitude to everyone who contributed their time, expertise, and feedback to make this resource possible.
-
             ## Questions or Feedback?
             For any questions about The Zone or this presentation, please reach out to The Zone Team. We're always happy to discuss how this platform can support your data science initiatives.
-
             ---
           files: |
             slides-en.pdf
