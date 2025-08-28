@@ -156,7 +156,6 @@ jobs:
             For any questions about The Zone or this presentation, please reach out to The Zone Team. We're always happy to discuss how this platform can support your data science initiatives.
 
             ---
-            *This release was automatically generated on $(date +%Y-%m-%d)*
           files: |
             slides-en.pdf
             slides-fr.pdf
