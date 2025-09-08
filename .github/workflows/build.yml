@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       pdfs-built: ${{ steps.verify.outputs.pdfs-built }}
+      french-available: ${{ steps.check-french.outputs.french-available }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -233,6 +234,15 @@ jobs:
           name: slides-pdfs
           path: .
           
+      - name: Generate Release Notes
+        id: release-notes
+        run: |
+          if [ "${{ needs.build.outputs.french-available }}" = "true" ]; then
+            echo "translation-note=The French version was automatically generated using Google Translate API. While we've made efforts to ensure accuracy, some nuances may not be perfectly captured. For official communications, we recommend reviewing with a native French speaker." >> $GITHUB_OUTPUT
+          else
+            echo "translation-note=The French version is a basic summary as the translation service was not available. For a complete French version, please configure the Google Translate API key or provide a manual translation." >> $GITHUB_OUTPUT
+          fi
+          
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
@@ -251,7 +261,7 @@ jobs:
             The FAIR principles are guidelines to improve the findability, accessibility, interoperability, and reuse of digital assets. This presentation outlines our approach to implementing FAIR data practices.
             
             ## Translation Note
-            ${{ steps.check-french.outputs.french-available == 'true' && 'The French version was automatically generated using Google Translate API. While we\'ve made efforts to ensure accuracy, some nuances may not be perfectly captured. For official communications, we recommend reviewing with a native French speaker.' || 'The French version is a basic summary as the translation service was not available. For a complete French version, please configure the Google Translate API key or provide a manual translation.' }}
+            ${{ steps.release-notes.outputs.translation-note }}
             
             ## Questions or Feedback?
             Please reach out to the FAIR implementation team with any questions or feedback about this presentation.
