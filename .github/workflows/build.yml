@@ -1,9 +1,9 @@
 name: Deploy Marp Slides to GitHub Pages
 on:
   push:
-    branches: [main]
+    branches: [FAIR]
   pull_request:
-    branches: [main]
+    branches: [FAIR]
 permissions:
   contents: read
   pages: write
@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       pdfs-built: ${{ steps.verify.outputs.pdfs-built }}
+      french-available: ${{ steps.check-french.outputs.french-available }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -25,6 +26,96 @@ jobs:
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
         
+      - name: Check for French translation capability
+        id: check-french
+        run: |
+          if [ -n "${{ secrets.GOOGLE_TRANSLATE_API_KEY }}" ]; then
+            echo "french-available=true" >> $GITHUB_OUTPUT
+          else
+            echo "french-available=false" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Install translation dependencies
+        if: steps.check-french.outputs.french-available == 'true'
+        run: npm install @google-cloud/translate
+        
+      - name: Translate English to French
+        if: steps.check-french.outputs.french-available == 'true'
+        env:
+          GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
+        run: |
+          # Create translation script
+          cat > translate.js << 'EOF'
+          const fs = require('fs');
+          const { Translate } = require('@google-cloud/translate').v2;
+
+          const translate = new Translate({ key: process.env.GOOGLE_TRANSLATE_API_KEY });
+
+          async function translateMarkdown() {
+            // Read English content
+            const englishContent = fs.readFileSync('content/slides-en.md', 'utf8');
+            
+            // Split into chunks to avoid API limits
+            const chunks = englishContent.match(/[\s\S]{1,4000}/g) || [];
+            const translatedChunks = [];
+            
+            for (const chunk of chunks) {
+              try {
+                const [translation] = await translate.translate(chunk, 'fr');
+                translatedChunks.push(translation);
+              } catch (error) {
+                console.error('Translation error:', error);
+                translatedChunks.push(chunk); // Fallback to original
+              }
+            }
+            
+            // Write French content
+            fs.writeFileSync('content/slides-fr.md', translatedChunks.join(''));
+            console.log('Translation completed');
+          }
+
+          translateMarkdown().catch(console.error);
+          EOF
+          
+          # Run translation
+          node translate.js
+          
+      - name: Create fallback French content
+        if: steps.check-french.outputs.french-available == 'false'
+        run: |
+          # Create basic French content if no translation capability
+          cat > content/slides-fr.md << 'EOF'
+          # Présentation FAIR
+          
+          ### Stratégie de Données Souveraines
+          
+          **Note**: Cette présentation n'est pas disponible en français car la clé de traduction n'est pas configurée. Veuillez contacter l'équipe pour une version française.
+          
+          ---
+          
+          # Recommandation Principale
+          
+          StatCan doit mettre en œuvre une plateforme de données souveraine comme infrastructure principale pour les données sensibles.
+          
+          ---
+          
+          # Pourquoi la Souveraineté est Importante
+          
+          - **Exigences Légales**: Loi sur la statistique et Loi sur la protection des renseignements personnels
+          - **Directives Gouvernementales**: Le Conseil du Trésor exige des infrastructures souveraines
+          - **Risques Juridictionnels**: Loi CLOUD américaine permet l'accès étranger aux données
+          
+          ---
+          
+          # Prochaines Étapes
+          
+          1. Approuver la plateforme souveraine
+          2. Allouer les ressources nécessaires
+          3. Établir des politiques de gouvernance
+          4. Définir un calendrier de mise en œuvre
+          
+          EOF
+          
       - name: Create combined markdown files
         run: |
           # Create temp directory
@@ -67,7 +158,7 @@ jobs:
   publish:
     needs: build
     environment:
-      name: github-pages
+      name: FAIR-pages  # Changed from github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
@@ -133,7 +224,7 @@ jobs:
   release:
     needs: [build, publish]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/FAIR'
     permissions:
       contents: write
     steps:
@@ -143,23 +234,37 @@ jobs:
           name: slides-pdfs
           path: .
           
+      - name: Generate Release Notes
+        id: release-notes
+        run: |
+          if [ "${{ needs.build.outputs.french-available }}" = "true" ]; then
+            echo "translation-note=The French version was automatically generated using Google Translate API. While we've made efforts to ensure accuracy, some nuances may not be perfectly captured. For official communications, we recommend reviewing with a native French speaker." >> $GITHUB_OUTPUT
+          else
+            echo "translation-note=The French version is a basic summary as the translation service was not available. For a complete French version, please configure the Google Translate API key or provide a manual translation." >> $GITHUB_OUTPUT
+          fi
+          
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v${{ github.run_number }}
-          name: The Zone Presentation v${{ github.run_number }}
+          tag_name: FAIR-v${{ github.run_number }}
+          name: FAIR Presentation v${{ github.run_number }}
           body: |
-            # Welcome to The Zone Presentation!
-            Dear Zone Friends,
-            We're pleased to share the latest version of our presentation on The Zone - Statistics Canada's modern data science platform. This release represents our ongoing commitment to providing innovative, secure, and efficient tools for data science across the organization.
+            # FAIR Data Presentation
+            
+            This release contains the FAIR (Findable, Accessible, Interoperable, Reusable) data presentation materials.
+            
             ## What's Included
             - `slides-en.pdf`: English version of the presentation
             - `slides-fr.pdf`: French version of the presentation
-            ## Acknowledgments
-            This presentation is the result of collaborative efforts across multiple teams. We extend our gratitude to everyone who contributed their time, expertise, and feedback to make this resource possible.
+            
+            ## About FAIR
+            The FAIR principles are guidelines to improve the findability, accessibility, interoperability, and reuse of digital assets. This presentation outlines our approach to implementing FAIR data practices.
+            
+            ## Translation Note
+            ${{ steps.release-notes.outputs.translation-note }}
+            
             ## Questions or Feedback?
-            For any questions about The Zone or this presentation, please reach out to The Zone Team. We're always happy to discuss how this platform can support your data science initiatives.
-            ---
+            Please reach out to the FAIR implementation team with any questions or feedback about this presentation.
           files: |
             slides-en.pdf
             slides-fr.pdf
