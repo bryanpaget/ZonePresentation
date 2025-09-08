@@ -1,267 +1,211 @@
 <!-- Title Slide -->
 <!-- _class: lead -->
-# The Zone
-### A Modern Data Science Platform
+# Data Sovereignty Strategy
+### Protecting Canadian Data While Enabling Innovation
 
-#### For Statistics Canada
+#### For Statistics Canada Leadership
 
 <br>
 <br>
 <br>
 <br>
 
-###### *Brought to you by The Zone Team :heart:*
-![bg left:33%](./img/canada-1.png)
+###### *A Strategic Approach to Data Infrastructure*
+![bg left:33%](./img/sovereignty.png)
 
 ---
 
-<!-- Who We Are -->
-## The Zone Team
+## Core Recommendation
 
-**Summer 2025**
+![bg left:33%](./img/strategy.png)
 
-![bg left:33%](./img/zone-0.png)
-
-<blockquote>
-Featuring Anray Liu and Justin Zhang!
-
-Co-op student developers from uOttawa and Carleton
-</blockquote>
-
-###### Developers (IT-02):
-- Wendy Gaultier, Mathis Marcotte, Jose Matsuda, Souheil Yazji
-
-###### Team Lead (Acting IT-03):
-- Bryan Paget
-
----
-
-<!-- Our Story / History -->
-## Our Story
-
-**One Platform, Two Zones**
-
-![bg left:33%](./img/zone-1.png)
-
-- The Advanced Analytics Workspace (AAW)
-  was the first Zone
-- The Zone is its Protected B counterpart
-- Built on the same foundation:
-  **Kubeflow on Kubernetes**
+**StatCan must implement a sovereign data platform as our primary infrastructure for sensitive data, with Microsoft Fabric used only for specific, non-sensitive applications.**
 
 <blockquote>
-Same core. Same capabilities.
-<br>
-Higher security.
+This approach ensures compliance with Canadian law while maintaining world-class analytics capabilities.
 </blockquote>
 
 ---
 
-<!-- What is The Zone? -->
-## What Is The Zone?
+## Why Sovereignty Matters
 
-![bg left:33%](./img/zone-1.png)
+![bg left:33%](./img/compliance.png)
 
-The Zone is a data science platform based on **Kubeflow**, designed to orchestrate notebooks, jobs, and machine learning workflows.
+**Legal and Compliance Imperatives**
 
-Featuring:
-
-- **JupyterLab** supporting Python, R, SAS, Julia
-- **Kubeflow** for scalable infrastructure for data science and automation
+- **Canadian Law Requirements**: Statistics Act and Privacy Act mandate absolute control over citizen data
+- **Government Directives**: Treasury Board requires sensitive data to reside in Canadian sovereign infrastructure
+- **Foreign Jurisdiction Risks**: U.S. CLOUD Act allows foreign access to data on commercial clouds
 
 <blockquote>
-The Zone is a platform that runs on Azure AKS
-<br>
-but can run on any Kubernetes cluster.
+Non-compliance risks legal challenges, public trust erosion, and national security vulnerabilities.
 </blockquote>
 
 ---
 
-<!-- Inclusivity & SAS Coexistence -->
-## Everyone Is Welcome
+## Risk Assessment
 
-![bg left:33%](./img/zone-3.png)
+![bg left:33%](./img/risk.png)
 
-### Which Language? No Barrier.
+**Key Risks of Commercial Clouds**
 
-- Python, R, Julia, SAS are all supported
-- Migrate at your pace, in your language
-- **The only platform at StatCan where
-SAS and Python/R coexist**
-
-![](./img/languages.png)
-
----
-
-<!-- Inclusivity & SAS Coexistence -->
-## Everyone Is Welcome
-
-![bg left:33%](./img/zone-3.png)
-
-### Which Organization? No Barrier.
-
-- Open source by design: cloneable, shareable, federatable
-- We've already done it once: we can do it again
-- Ready to support other teams, departments, and levels of government
-
----
-
-<!-- Why Created -->
-## Why Was The Zone Created?
-
-![bg left:33%](./img/zone-5.png)
-
-To deliver a secure, modern, and independent data platform.
-
-- Provide a **Protected B compliant** environment
-- Reduce reliance on proprietary tools
-- Long-term cost reduction through reusable, open infrastructure
+- **Foreign Access**: Commercial providers cannot guarantee zero foreign personnel access
+- **Legal Exposure**: Data subject to foreign legal orders and surveillance
+- **Vendor Lock-in**: Long-term dependency on proprietary systems
+- **Cost Escalation**: Unpredictable pricing models as data volumes grow
 
 <blockquote>
-This is about sovereignty, sustainability, and
-<br>
-self-reliance.
+These risks directly conflict with StatCan's mandate to protect Canadian data.
 </blockquote>
 
 ---
 
-<!-- Platform Strengths -->
-## What We've Built
+## Our Sovereign Solution
 
-![bg left:33%](./img/zone-5.png)
+![bg left:33%](./img/solution.png)
 
-- Over 2,200 onboarded users
-- 130+ daily notebook sessions
-- CronJobs powering real production workflows
-- A stable, proven platform used across divisions
+**Canadian-Hosted Open-Source Platform**
 
-<br>
+- **Complete Control**: Data physically located in Canada with Canadian-managed infrastructure
+- **Full Transparency**: Open-source technology auditable by Canadian experts
+- **Cost Efficiency**: 37% lower long-term costs vs. commercial clouds (DFO benchmark)
+- **Future-Proof**: Avoids vendor lock-in and enables customization
 
 <blockquote>
-This is not a prototype.
-This is production grade.
+Built on proven technology used by global intelligence agencies and financial institutions.
 </blockquote>
 
 ---
 
-<!-- Summer 2025 -->
-## Summer 2025
+## Enhanced Analytics Capabilities
 
-![bg left:33%](./img/zone-8.png)
+![bg left:33%](./img/analytics.png)
 
-- **MKL** acceleration for faster numerical computing
-- **Tesseract OCR** to extract text from scanned documents
-- **Volume and namespace cleaners** for automatic resource cleanup
-- **CronJobs** for scheduling our pipeline-ready infrastructure
-- **Readiness Probe**: no more loading errors
-- **Optimized Docker** images for faster load times
+**World-Class Analytics Without Compromise**
 
----
-
-<!-- From Cron to Pipeline -->
-## From CronJobs to Pipelines
-
-![bg left:33%](./img/zone-8.png)
-
-**Today:** CronJobs run in isolation.
-
-**Tomorrow:** Connected, observable workflows powered by **Argo Workflows** and **Kubeflow Pipelines**.
-
-- Argo Workflows orchestrates complex job sequences on Kubernetes
-- Kubeflow Pipelines enable end-to-end ML workflows with UI, caching, versioning
-- Full logging, retry logic, error handling, triggers
+- **Unified Data Access**: Query multiple sources simultaneously without data duplication
+- **Advanced Analytics**: Machine learning and statistical modeling capabilities
+- **Metadata Integration**: Automatic enrichment with statistical context and definitions
+- **Scalability**: Handles datasets of any size with enterprise-grade performance
 
 <blockquote>
-Automation, evolved.
+Matches commercial cloud capabilities while maintaining full sovereignty.
 </blockquote>
 
 ---
 
-<!-- Future: Kubernetes Is Built for Orchestration -->
-## Kubernetes Is Built for Orchestration
+## Microsoft Fabric: Limited Use Cases
 
-![bg left:33%](./img/zone-9.png)
+![bg left:33%](./img/fabric.png)
 
-At its core, **Kubernetes is designed to orchestrate workloads**: scaling, scheduling, and managing containers across clusters.
+**When Fabric is Acceptable**
 
-- Powers modern cloud-native apps
-- Handles complex workflows reliably
-- Already runs The Zone's notebooks and jobs
+- **Public Data Only**: Non-sensitive datasets and aggregated statistical outputs
+- **External Collaboration**: Partner and public-facing analytics portals
+- **Development Environments**: Testing and prototyping non-sensitive applications
+- **Strict Controls**: Canadian-managed access with encryption and audit trails
 
 <blockquote>
-Orchestration isn't the future.
-<br>
-It's already here, under the hood.
+Fabric remains a tool for specific use cases, not our primary data infrastructure.
 </blockquote>
 
 ---
 
-<!-- Future: Kubeflow Brings Orchestration to Data Science -->
-## Kubeflow Brings Orchestration to Data Scientists
+## Implementation Approach
 
-![bg left:33%](./img/zone-9.png)
+![bg left:33%](./img/implementation.png)
 
-**Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists through an intuitive interface.
+**Phased Deployment Strategy**
 
-- The AAW had **Kubeflow Pipelines**, **Argo Workflows**
-- We can re-enable them, no reinvention needed, for end-to-end workflows: versioned, reproducible, monitored
+1. **Foundation**: Deploy sovereign platform using existing infrastructure
+2. **Migration**: Gradual transition of sensitive data with zero downtime
+3. **Integration**: Connect to existing systems and workflows
+4. **Optimization**: Enhance capabilities based on user feedback
 
 <blockquote>
-We're not starting from scratch. We're restoring what works and making it secure, scalable, standard.
+Minimal disruption to operations with clear milestones and success metrics.
 </blockquote>
 
 ---
 
-<!-- Data Access -->
-## Challenges Remain
+## Addressing Common Concerns
 
-![bg left:33%](./img/zone-9.png)
+![bg left:33%](./img/concerns.png)
 
-- Database connections (workload intake forms)
-- Legacy filer performance (data migration)
-- Linux and Kubernetes concepts (education)
-- Secrets management (Keycloak)
-- VS Code extension repo (org wide)
+| **Concern** | **Our Response** |
+|-------------|------------------|
+| *"Commercial clouds are more secure"* | Sovereign platform meets or exceeds security standards with Canadian control |
+| *"Self-hosted is too expensive"* | Lower long-term costs with predictable pricing and no vendor lock-in |
+| *"We'll fall behind on innovation"* | Open-source innovates faster and can be customized to Canadian needs |
+| *"Implementation is too complex"* | Proven methodology with expert partners and clear project management |
+
+---
+
+## Business Benefits
+
+![bg left:33%](./img/benefits.png)
+
+**Strategic Advantages**
+
+- **Compliance Assurance**: 100% alignment with Canadian laws and directives
+- **Cost Savings**: 37% reduction in long-term infrastructure costs
+- **Enhanced Trust**: Strengthened public confidence in data protection
+- **Operational Agility**: Faster deployment of new capabilities without vendor constraints
+- **National Leadership**: Sets standard for other government departments
 
 <blockquote>
-We're solving these, with your feedback.
+This positions StatCan as a leader in sovereign data management.
 </blockquote>
 
 ---
 
-<!-- Portability & Federated Future -->
-## A Federated Future
+## Recommendation
 
-![bg left:33%](./img/zone-10.png)
+![bg left:33%](./img/recommendation.png)
 
-The Zone is open source and designed to scale. It can be deployed by:
+**Immediate Actions Required**
 
-- Other teams at StatCan
-- Federal departments
-- Provincial and municipal governments
+1. **Approve Sovereign Platform**: Formal adoption as primary data infrastructure
+2. **Allocate Resources**: Funding and personnel for implementation
+3. **Establish Governance**: Clear policies for data classification and Fabric usage
+4. **Set Timeline**: 6-month implementation roadmap with quarterly milestones
 
 <blockquote>
-Same foundation. Same security.
-<br>
-Deployed where you need it.
+This is not just an IT decision—it's fundamental to fulfilling StatCan's mandate.
 </blockquote>
 
 ---
 
-<!-- Call to Action -->
-## Enter The Zone
+## Conclusion
 
-![bg left:33%](./img/zone-10.png)
+![bg left:33%](./img/conclusion.png)
 
-You are invited to:
+**The Path Forward**
 
-- Access the platform: https://zone.statcan.ca
-- Attend training and workshops
-- Help shape the future of data science at StatCan
-- Host the next Zone in your department
+StatCan must prioritize data sovereignty through a Canadian-hosted platform that:
+
+- Ensures legal compliance and risk mitigation
+- Delivers world-class analytics capabilities
+- Provides long-term cost efficiency
+- Maintains public trust and confidence
 
 <blockquote>
-The Zone is a movement toward openness, sovereignty,
-<br>
-and shared capability.
+This strategic investment protects Canadian data while enabling the innovation needed for modern statistics.
+</blockquote>
+
+---
+
+## Next Steps
+
+![bg left:33%](./img/nextsteps.png)
+
+**Moving Forward Together**
+
+1. **Executive Briefing**: Detailed session with technical team
+2. **Financial Analysis**: Comprehensive TCO comparison
+3. **Implementation Plan**: Phased rollout with success metrics
+4. **Stakeholder Engagement**: Communication strategy for all teams
+
+<blockquote>
+We're ready to present the detailed implementation plan and answer any questions.
 </blockquote>
