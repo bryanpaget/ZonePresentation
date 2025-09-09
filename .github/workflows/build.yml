@@ -1,9 +1,9 @@
 name: Deploy Marp Slides to GitHub Pages
 on:
   push:
-    branches: [FAIR]
+    branches: [Arch]
   pull_request:
-    branches: [FAIR]
+    branches: [Arch]
 permissions:
   contents: read
   pages: write
@@ -85,7 +85,7 @@ jobs:
         run: |
           # Create basic French content if no translation capability
           cat > content/slides-fr.md << 'EOF'
-          # Présentation FAIR
+          # Présentation 
           
           ### Stratégie de Données Souveraines
           
@@ -224,7 +224,7 @@ jobs:
   release:
     needs: [build, publish]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/FAIR'
+    if: github.ref == 'refs/heads/'
     permissions:
       contents: write
     steps:
@@ -246,25 +246,20 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: FAIR-v${{ github.run_number }}
-          name: FAIR Presentation v${{ github.run_number }}
+          tag_name: Arch-v${{ github.run_number }}
+          name: Arch Presentation v${{ github.run_number }}
           body: |
-            # FAIR Data Presentation
-            
-            This release contains the FAIR (Findable, Accessible, Interoperable, Reusable) data presentation materials.
-            
+            # Arch Linux Presentation
+                        
             ## What's Included
             - `slides-en.pdf`: English version of the presentation
             - `slides-fr.pdf`: French version of the presentation
-            
-            ## About FAIR
-            The FAIR principles are guidelines to improve the findability, accessibility, interoperability, and reuse of digital assets. This presentation outlines our approach to implementing FAIR data practices.
-            
+                        
             ## Translation Note
             ${{ steps.release-notes.outputs.translation-note }}
             
             ## Questions or Feedback?
-            Please reach out to the FAIR implementation team with any questions or feedback about this presentation.
+            Please reach out to the Arch implementation team with any questions or feedback about this presentation.
           files: |
             slides-en.pdf
             slides-fr.pdf
