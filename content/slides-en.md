@@ -15,7 +15,7 @@
 
 ---
 
-<!-- Who We Are -->
+<!-- Who We Are, Summer 2025 -->
 ## The Zone Team
 
 **Summer 2025**
