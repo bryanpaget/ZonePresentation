@@ -171,9 +171,7 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 - **caret & tidymodels** for ML
 
 **Unified Environment:**
-- Shared data between languages
-- Integrated package management
-- Version control integration
+- Shared data between languages, integrated package management, version control integration
 
 ---
 
@@ -249,7 +247,6 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 - **Kubeflow Pipelines** for complex, reproducible workflows
 - **Enhanced monitoring** with real-time dashboards
 - **Expanded database connectors** for enterprise data sources
-- **Advanced visualization capabilities** with 3D and geospatial
 - **Performance optimizations** for large-scale data processing
 
 ---
