@@ -1,4 +1,4 @@
-name: Deploy Marp Slides to GitHub Pages
+name: Build Marp Slides PDFs
 on:
   push:
     branches: [fall-2025]
@@ -6,14 +6,9 @@ on:
     branches: [fall-2025]
 permissions:
   contents: read
-  pages: write
-  id-token: write
 jobs:
   build:
     runs-on: ubuntu-latest
-    outputs:
-      pdfs-built: ${{ steps.verify.outputs.pdfs-built }}
-      french-available: ${{ steps.check-french.outputs.french-available }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -25,126 +20,6 @@ jobs:
           
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
-        
-      - name: Check for French translation capability
-        id: check-french
-        run: |
-          if [ -n "${{ secrets.GOOGLE_TRANSLATE_API_KEY }}" ]; then
-            echo "french-available=true" >> $GITHUB_OUTPUT
-          else
-            echo "french-available=false" >> $GITHUB_OUTPUT
-          fi
-          
-      - name: Install translation dependencies
-        if: steps.check-french.outputs.french-available == 'true'
-        run: npm install @google-cloud/translate
-        
-      - name: Translate English to French
-        if: steps.check-french.outputs.french-available == 'true'
-        env:
-          GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
-        run: |
-          # Create translation script
-          cat > translate.js << 'EOF'
-          const fs = require('fs');
-          const { Translate } = require('@google-cloud/translate').v2;
-
-          const translate = new Translate({ key: process.env.GOOGLE_TRANSLATE_API_KEY });
-
-          async function translateMarkdown() {
-            // Read English content
-            const englishContent = fs.readFileSync('content/slides-en.md', 'utf8');
-            
-            // Split into chunks to avoid API limits
-            const chunks = englishContent.match(/[\s\S]{1,4000}/g) || [];
-            const translatedChunks = [];
-            
-            for (const chunk of chunks) {
-              try {
-                const [translation] = await translate.translate(chunk, 'fr');
-                translatedChunks.push(translation);
-              } catch (error) {
-                console.error('Translation error:', error);
-                translatedChunks.push(chunk); // Fallback to original
-              }
-            }
-            
-            // Write French content
-            fs.writeFileSync('content/slides-fr.md', translatedChunks.join(''));
-            console.log('Translation completed');
-          }
-
-          translateMarkdown().catch(console.error);
-          EOF
-          
-          # Run translation
-          node translate.js
-          
-      - name: Create fallback French content
-        if: steps.check-french.outputs.french-available == 'false'
-        run: |
-          # Create basic French content if no translation capability
-          cat > content/slides-fr.md << 'EOF'
-          # The Zone
-          ### Plateforme Moderne de Science des Données
-          
-          **Pour Statistique Canada**
-          
-          <br>
-          <br>
-          <br>
-          <br>
-          
-          ###### *Présenté par l'Équipe Zone :heart:*
-          
-          ---
-          
-          # Équipe Zone
-          
-          **Automne 2025**
-          
-          > Avec Anray Liu!
-          > Développeur stagiaire de l'Université d'Ottawa
-          
-          **Développeurs (IT-02):**
-          - Wendy Gaultier
-          - Mathis Marcotte  
-          - Jose Matsuda
-          - Souheil Yazji
-          
-          **Chef d'équipe (IT-03 intérimaire):**
-          - Bryan Paget
-          
-          ---
-          
-          # Évolution de la Plateforme
-          
-          **Croissance et Stabilisation Significatives**
-          
-          - **2 400+ utilisateurs intégrés** (continuing to grow)
-          - **260+ sessions de notebook quotidiennes** (doubled since summer!)
-          - **CronJobs en production** exécutant des workflows critiques
-          - **Renforcement de la plateforme** pour une stabilité et des performances améliorées
-          
-          > Nous ne faisons pas que grandir - nous arrivons à maturité
-          > en une plateforme prête pour la production.
-          
-          ---
-          
-          # Qu'est-ce que The Zone?
-          
-          The Zone est une **plateforme de science des données Protégé B** basée sur **Kubeflow**, conçue pour orchestrer les notebooks, les travaux et les workflows d'apprentissage automatique.
-          
-          **Caractéristiques:**
-          
-          - **JupyterLab** prenant en charge Python, R, SAS, Julia, JavaScript
-          - **Kubeflow** pour une infrastructure évolutive
-          - **CronJobs** pour les charges de travail planifiées en production
-          
-          > La plateforme sécurisée et moderne pour les besoins
-          > en science des données de StatCan.
-          
-          EOF
           
       - name: Create combined markdown files
         run: |
@@ -152,156 +27,29 @@ jobs:
           mkdir -p temp
           # Combine header + content for English
           cat config/header.md content/slides-en.md > temp/slides-en-combined.md
-          # Combine header + content for French
-          cat config/header.md content/slides-fr.md > temp/slides-fr-combined.md
           
       - name: Copy images to temp directory
         run: |
           # Copy img directory to temp for PDF generation
           cp -r img temp/
           
-      - name: Build PDFs
+      - name: Build PDF
         run: |
-          marp temp/slides-en-combined.md --pdf --output slides-en.pdf --allow-local-files
-          marp temp/slides-fr-combined.md --pdf --output slides-fr.pdf --allow-local-files
+          marp temp/slides-en-combined.md --pdf --output the-zone-demo-fall-2025.pdf --allow-local-files
           
-      - name: Verify PDFs exist
-        id: verify
+      - name: Verify PDF exists
         run: |
-          if [ -f slides-en.pdf ] && [ -f slides-fr.pdf ]; then
-            echo "pdfs-built=true" >> $GITHUB_OUTPUT
-            echo "PDFs built successfully"
+          if [ -f the-zone-demo-fall-2025.pdf ]; then
+            echo "PDF built successfully"
+            ls -la *.pdf
           else
-            echo "PDFs not built!"
+            echo "PDF not built!"
             exit 1
           fi
           
-      - name: Upload PDFs artifact
+      - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
-          name: slides-pdfs
-          path: |
-            slides-en.pdf
-            slides-fr.pdf
+          name: zone-demo-pdf
+          path: the-zone-demo-fall-2025.pdf
           retention-days: 30
-          
-  publish:
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "18"
-          
-      - name: Install Marp CLI
-        run: npm install -g @marp-team/marp-cli
-        
-      - name: Create output directories
-        run: |
-          mkdir -p public
-          mkdir -p public/img
-          
-      - name: Copy images to public directory
-        run: cp -r img/* public/img/
-        
-      - name: Create combined markdown files
-        run: |
-          mkdir -p temp
-          cat config/header.md content/slides-en.md > temp/slides-en-combined.md
-          cat config/header.md content/slides-fr.md > temp/slides-fr-combined.md
-          
-      - name: Copy images to temp directory
-        run: |
-          # Copy img directory to temp for HTML generation
-          cp -r img temp/
-          
-      - name: Generate English HTML
-        run: |
-          marp temp/slides-en-combined.md \
-            --html \
-            --output public/index.html \
-            --allow-local-files
-            
-      - name: Generate French HTML
-        run: |
-          marp temp/slides-fr-combined.md \
-            --html \
-            --output public/fr.html \
-            --allow-local-files
-            
-      - name: List public directory
-        run: ls -la public/
-        
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-          
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-        
-  release:
-    needs: [build, publish]
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/fall-2025'
-    permissions:
-      contents: write
-    steps:
-      - name: Download PDFs artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: slides-pdfs
-          path: .
-          
-      - name: Generate Release Notes
-        id: release-notes
-        run: |
-          if [ "${{ needs.build.outputs.french-available }}" = "true" ]; then
-            echo "translation-note=The French version was automatically generated using Google Translate API. While we've made efforts to ensure accuracy, some nuances may not be perfectly captured. For official communications, we recommend reviewing with a native French speaker." >> $GITHUB_OUTPUT
-          else
-            echo "translation-note=The French version is a basic summary as the translation service was not available. For a complete French version, please configure the Google Translate API key or provide a manual translation." >> $GITHUB_OUTPUT
-          fi
-          
-      - name: Create Release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: zone-demo-fall-2025-v${{ github.run_number }}
-          name: The Zone Platform Demo - Fall 2025 v${{ github.run_number }}
-          body: |
-            # The Zone Platform Demo - Fall 2025
-            
-            This release contains The Zone data science platform demo materials for Fall 2025.
-            
-            ## What's Included
-            - `slides-en.pdf`: English version of the presentation
-            - `slides-fr.pdf`: French version of the presentation
-            
-            ## About The Zone
-            The Zone is Statistics Canada's Protected B data science platform based on Kubeflow, designed to orchestrate notebooks, jobs, and machine learning workflows with support for Python, R, SAS, Julia, and JavaScript.
-            
-            ## Platform Highlights
-            - 2,400+ onboarded users
-            - 260+ daily notebook sessions
-            - Production CronJobs for automated workflows
-            - Multi-language support including SAS coexistence
-            - Interactive visualizations with D3.js
-            
-            ## Translation Note
-            ${{ steps.release-notes.outputs.translation-note }}
-            
-            ## Questions or Feedback?
-            Please reach out to The Zone team with any questions or feedback about this presentation or the platform.
-          files: |
-            slides-en.pdf
-            slides-fr.pdf
