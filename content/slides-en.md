@@ -22,8 +22,7 @@
 
 ![bg left:33%](./img/zone-0.png)
 
-> Featuring Anray Liu!
-> Co-op student developer from uOttawa
+> Featuring Anray Liu from uOttawa!
 
 **Developers (IT-02):**
 - Wendy Gaultier
@@ -43,8 +42,8 @@
 
 **Significant Growth & Stabilization**
 
-- **2,400+ onboarded users** (continuing to grow)
-- **260+ daily notebook sessions** (doubled since summer!)
+- **2,500+ onboarded users** (continuing to grow)
+- **260+ daily notebook sessions** (doubled since Summer 2025!)
 - **Production CronJobs** running critical workflows
 - **Platform hardening** for enhanced stability and performance
 
@@ -106,10 +105,6 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 - Data validation and quality checks
 
 ---
-**Live Demo**
----
-
----
 
 <!-- Demo 2: D3/JavaScript -->
 ## Demo 2: Interactive Visualizations
@@ -128,10 +123,6 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 - Real-time data streaming capabilities
 - Custom interactive visualizations
 - Web-based dashboard deployment
-
----
-**Live Demo**
----
 
 ---
 
@@ -160,10 +151,6 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 - Version control integration
 
 ---
-**Live Demo**
----
-
----
 
 <!-- Demo 4: SAS Integration -->
 ## Demo 4: SAS Coexistence & Migration
@@ -182,10 +169,6 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 - DATA step transformations to pandas/tidyverse
 - Statistical analysis cross-validation
 - Performance benchmarking between languages
-
----
-**Live Demo**
----
 
 ---
 
