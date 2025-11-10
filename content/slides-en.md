@@ -11,7 +11,7 @@
 <br>
 
 ###### *Brought to you by The Zone Team :heart:*
-![bg left:33%](../img/canada-1.png)
+![bg left:33%](./img/canada-1.png)
 
 ---
 
@@ -20,7 +20,7 @@
 
 **Fall 2025**
 
-![bg left:33%](../img/zone-0.png)
+![bg left:33%](./img/zone-0.png)
 
 > Featuring Anray Liu!
 > Co-op student developer from uOttawa
@@ -39,7 +39,7 @@
 <!-- Platform Growth & Hardening -->
 ## Platform Evolution
 
-![bg left:33%](../img/zone-5.png)
+![bg left:33%](./img/zone-5.png)
 
 **Significant Growth & Stabilization**
 
@@ -56,7 +56,7 @@
 <!-- What is The Zone? -->
 ## What Is The Zone?
 
-![bg left:33%](../img/zone-1.png)
+![bg left:33%](./img/zone-1.png)
 
 The Zone is a **Protected B data science platform** based on **Kubeflow**, designed to orchestrate notebooks, jobs, and machine learning workflows.
 
@@ -73,7 +73,7 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 <!-- Live Demos -->
 ## Platform Capabilities: Live Demos
 
-![bg left:33%](../img/zone-8.png)
+![bg left:33%](./img/zone-8.png)
 
 ### See The Zone in Action
 
@@ -90,7 +90,7 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 <!-- Demo 1: CronJobs -->
 ## Demo 1: Production CronJobs
 
-![bg left:33%](../img/zone-8.png)
+![bg left:33%](./img/zone-8.png)
 
 **Enterprise-Grade Scheduling**
 
@@ -114,7 +114,7 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 <!-- Demo 2: D3/JavaScript -->
 ## Demo 2: Interactive Visualizations
 
-![bg left:33%](../img/zone-9.png)
+![bg left:33%](./img/zone-9.png)
 
 **Rich, Interactive Dashboards**
 
@@ -138,7 +138,7 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 <!-- Demo 3: Standard Data Science -->
 ## Demo 3: Python & R Workflows
 
-![bg left:33%](../img/zone-3.png)
+![bg left:33%](./img/zone-3.png)
 
 **Comprehensive Data Science Stack**
 
@@ -168,7 +168,7 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 <!-- Demo 4: SAS Integration -->
 ## Demo 4: SAS Coexistence & Migration
 
-![bg left:33%](../img/zone-3.png)
+![bg left:33%](./img/zone-3.png)
 
 **Bridging Traditional and Modern**
 
@@ -192,7 +192,7 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 <!-- Platform Architecture -->
 ## Technical Foundation
 
-![bg left:33%](../img/zone-1.png)
+![bg left:33%](./img/zone-1.png)
 
 **Built on Enterprise-Grade Stack**
 
@@ -216,7 +216,7 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 <!-- Future Roadmap -->
 ## What's Next?
 
-![bg left:33%](../img/zone-9.png)
+![bg left:33%](./img/zone-9.png)
 
 **Pipeline Orchestration & Beyond**
 
@@ -240,7 +240,7 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 <!-- Call to Action -->
 ## Join The Zone
 
-![bg left:33%](../img/zone-10.png)
+![bg left:33%](./img/zone-10.png)
 
 **You're Invited To:**
 
@@ -258,7 +258,7 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 <!-- Contact & Resources -->
 ## Get Started Today
 
-![bg left:33%](../img/zone-10.png)
+![bg left:33%](./img/zone-10.png)
 
 **Resources & Support**
 
