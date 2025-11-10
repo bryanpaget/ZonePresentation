@@ -1,9 +1,9 @@
 name: Deploy Marp Slides to GitHub Pages
 on:
   push:
-    branches: [FAIR]
+    branches: [fall-2025]
   pull_request:
-    branches: [FAIR]
+    branches: [fall-2025]
 permissions:
   contents: read
   pages: write
