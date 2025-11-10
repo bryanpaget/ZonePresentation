@@ -7,7 +7,9 @@
 
 <br>
 <br>
-<br>
+
+## Fall 2025 Update
+
 <br>
 
 ###### *Brought to you by The Zone Team :heart:*
@@ -16,11 +18,11 @@
 ---
 
 <!-- Who We Are, Fall 2025 -->
-## The Zone Team Fall 2025
+## The Zone Team
 
 ![bg left:33%](./img/zone-0.png)
 
-> Featuring Anray Liu from uOttawa!
+> Fall 2025, featuring Anray Liu from uOttawa!
 
 **Developers (IT-02):**
 - Wendy Gaultier
