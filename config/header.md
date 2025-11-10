@@ -3,7 +3,7 @@ marp: true
 size: 16:9
 paginate: true
 footer: "Statistics Canada | Statistique Canada"
-header: "August 26, 2025"
+header: "November 14, 2025"
 theme: default
 style: |
   /* Statistics Canada Marp Theme */
