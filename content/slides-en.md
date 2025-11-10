@@ -16,9 +16,7 @@
 ---
 
 <!-- Who We Are, Fall 2025 -->
-## The Zone Team
-
-**Fall 2025**
+## The Zone Team Fall 2025
 
 ![bg left:33%](./img/zone-0.png)
 
@@ -43,7 +41,7 @@
 **Significant Growth & Stabilization**
 
 - **2,500+ onboarded users** (continuing to grow)
-- **260+ daily notebook sessions** (doubled since Summer 2025!)
+- **290+ daily notebook sessions** (more than doubled since Summer 2025!)
 - **Production CronJobs** running critical workflows
 - **Platform hardening** for enhanced stability and performance
 
@@ -98,11 +96,21 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 - **Comprehensive monitoring** with job history and status tracking
 - **Flexible scheduling** from simple daily runs to complex cron expressions
 
+---
+
+<!-- Demo 1: CronJobs Use Cases -->
+## Demo 1: Production CronJobs
+
+![bg left:33%](./img/zone-8.png)
+
 **Perfect for:**
+
 - Automated data ingestion pipelines
 - Scheduled model retraining
 - Regular reporting and analytics
 - Data validation and quality checks
+
+> Reliable automation for production workloads
 
 ---
 
@@ -118,11 +126,21 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 - **Interactive web applications** with real-time data
 - **Custom dashboard creation** without external tools
 
+---
+
+<!-- Demo 2: D3/JavaScript Features -->
+## Demo 2: Interactive Visualizations
+
+![bg left:33%](./img/zone-9.png)
+
 **Powerful Features:**
+
 - Dynamic charts that respond to data changes
 - Real-time data streaming capabilities
 - Custom interactive visualizations
 - Web-based dashboard deployment
+
+> Create stunning visualizations without leaving the platform
 
 ---
 
@@ -138,6 +156,13 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 - **scikit-learn** for machine learning
 - **TensorFlow & PyTorch** for deep learning
 - **matplotlib & seaborn** for visualization
+
+---
+
+<!-- Demo 3: Standard Data Science Continued -->
+## Demo 3: Python & R Workflows
+
+![bg left:33%](./img/zone-3.png)
 
 **R Ecosystem:**
 - **tidyverse** for data wrangling
@@ -164,11 +189,21 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 - **Side-by-side code comparison** and validation
 - **Automated conversion tools** for common SAS patterns
 
+---
+
+<!-- Demo 4: SAS Migration Support -->
+## Demo 4: SAS Coexistence & Migration
+
+![bg left:33%](./img/zone-3.png)
+
 **Migration Support:**
+
 - SAS procedures to Python/R equivalents
 - DATA step transformations to pandas/tidyverse
 - Statistical analysis cross-validation
 - Performance benchmarking between languages
+
+> Your SAS investment is safe while you modernize
 
 ---
 
@@ -185,7 +220,15 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 - **Protected B compliance** built-in
 - **Multi-language runtime** support
 
+---
+
+<!-- Platform Architecture Continued -->
+## Scalability & Performance
+
+![bg left:33%](./img/zone-1.png)
+
 **Scalability Features:**
+
 - Automatic resource scaling based on demand
 - GPU acceleration for deep learning workloads
 - Distributed computing capabilities
@@ -209,7 +252,15 @@ The Zone is a **Protected B data science platform** based on **Kubeflow**, desig
 - **Advanced visualization capabilities** with 3D and geospatial
 - **Performance optimizations** for large-scale data processing
 
-**Coming Soon:**
+---
+
+<!-- Future Roadmap Continued -->
+## Coming Soon
+
+![bg left:33%](./img/zone-9.png)
+
+**Upcoming Features:**
+
 - Automated ML model deployment
 - Real-time inference capabilities
 - Collaborative data science features
