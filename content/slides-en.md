@@ -7,7 +7,9 @@
 
 <br>
 <br>
-<br>
+
+## Fall 2025 Update
+
 <br>
 
 ###### *Brought to you by The Zone Team :heart:*
@@ -15,45 +17,38 @@
 
 ---
 
-<!-- Who We Are, Summer 2025 -->
+<!-- Who We Are, Fall 2025 -->
 ## The Zone Team
-
-**Summer 2025**
 
 ![bg left:33%](./img/zone-0.png)
 
-<blockquote>
-Featuring Anray Liu and Justin Zhang!
+> Fall 2025, featuring Anray Liu from uOttawa!
 
-Co-op student developers from uOttawa and Carleton
-</blockquote>
-
-###### Developers (IT-02):
-- Wendy Gaultier, Mathis Marcotte, Jose Matsuda, Souheil Yazji
-
-###### Team Lead (Acting IT-03):
+**Developers (IT-02):**
+- Wendy Gaultier
+- Mathis Marcotte  
 - Bryan Paget
+- Souheil Yazji
+
+**Team Lead (Acting IT-03):**
+- Jose Matsuda
 
 ---
 
-<!-- Our Story / History -->
-## Our Story
+<!-- Platform Growth & Hardening -->
+## Platform Evolution
 
-**One Platform, Two Zones**
+![bg left:33%](./img/zone-5.png)
 
-![bg left:33%](./img/zone-1.png)
+**Significant Growth & Stabilization**
 
-- The Advanced Analytics Workspace (AAW)
-  was the first Zone
-- The Zone is its Protected B counterpart
-- Built on the same foundation:
-  **Kubeflow on Kubernetes**
+- **2,500+ onboarded users** (continuing to grow)
+- **290+ daily notebook sessions** (more than doubled since Summer 2025!)
+- **Production CronJobs** running critical workflows
+- **Platform hardening** for enhanced stability and performance
 
-<blockquote>
-Same core. Same capabilities.
-<br>
-Higher security.
-</blockquote>
+> We're not just growing - we're maturing into
+> a production-ready platform.
 
 ---
 
@@ -62,206 +57,248 @@ Higher security.
 
 ![bg left:33%](./img/zone-1.png)
 
-The Zone is a data science platform based on **Kubeflow**, designed to orchestrate notebooks, jobs, and machine learning workflows.
+The Zone is a **Protected B data science platform** based on **Kubeflow**, designed to orchestrate notebooks, jobs, and machine learning workflows.
 
-Featuring:
+**Featuring:**
 
-- **JupyterLab** supporting Python, R, SAS, Julia
-- **Kubeflow** for scalable infrastructure for data science and automation
+- **JupyterLab** supporting Python, R, SAS, Julia, JavaScript
+- **Kubeflow** for scalable infrastructure
+- **CronJobs** for scheduled production workloads
 
-<blockquote>
-The Zone is a platform that runs on Azure AKS
-<br>
-but can run on any Kubernetes cluster.
-</blockquote>
+> The secure, modern platform for StatCan's data science needs.
 
 ---
 
-<!-- Inclusivity & SAS Coexistence -->
-## Everyone Is Welcome
-
-![bg left:33%](./img/zone-3.png)
-
-### Which Language? No Barrier.
-
-- Python, R, Julia, SAS are all supported
-- Migrate at your pace, in your language
-- **The only platform at StatCan where
-SAS and Python/R coexist**
-
-![](./img/languages.png)
-
----
-
-<!-- Inclusivity & SAS Coexistence -->
-## Everyone Is Welcome
-
-![bg left:33%](./img/zone-3.png)
-
-### Which Organization? No Barrier.
-
-- Open source by design: cloneable, shareable, federatable
-- We've already done it once: we can do it again
-- Ready to support other teams, departments, and levels of government
-
----
-
-<!-- Why Created -->
-## Why Was The Zone Created?
-
-![bg left:33%](./img/zone-5.png)
-
-To deliver a secure, modern, and independent data platform.
-
-- Provide a **Protected B compliant** environment
-- Reduce reliance on proprietary tools
-- Long-term cost reduction through reusable, open infrastructure
-
-<blockquote>
-This is about sovereignty, sustainability, and
-<br>
-self-reliance.
-</blockquote>
-
----
-
-<!-- Platform Strengths -->
-## What We've Built
-
-![bg left:33%](./img/zone-5.png)
-
-- Over 2,200 onboarded users
-- 130+ daily notebook sessions
-- CronJobs powering real production workflows
-- A stable, proven platform used across divisions
-
-<br>
-
-<blockquote>
-This is not a prototype.
-This is production grade.
-</blockquote>
-
----
-
-<!-- Summer 2025 -->
-## Summer 2025
+<!-- Live Demos -->
+## Platform Capabilities: Live Demos
 
 ![bg left:33%](./img/zone-8.png)
 
-- **MKL** acceleration for faster numerical computing
-- **Tesseract OCR** to extract text from scanned documents
-- **Volume and namespace cleaners** for automatic resource cleanup
-- **CronJobs** for scheduling our pipeline-ready infrastructure
-- **Readiness Probe**: no more loading errors
-- **Optimized Docker** images for faster load times
+### See The Zone in Action
+
+1. **Production CronJobs** - Automated scheduled workflows
+2. **Interactive Visualizations** - D3 and JavaScript capabilities  
+3. **Standard Data Science** - Python and R workflows
+4. **SAS Integration** - Coexistence and migration tools
+
+> From batch processing to interactive analytics -
+> all in one platform.
 
 ---
 
-<!-- From Cron to Pipeline -->
-## From CronJobs to Pipelines
+<!-- Demo 1: CronJobs -->
+## Demo 1: Production CronJobs
 
 ![bg left:33%](./img/zone-8.png)
 
-**Today:** CronJobs run in isolation.
+**Enterprise-Grade Scheduling**
 
-**Tomorrow:** Connected, observable workflows powered by **Argo Workflows** and **Kubeflow Pipelines**.
-
-- Argo Workflows orchestrates complex job sequences on Kubernetes
-- Kubeflow Pipelines enable end-to-end ML workflows with UI, caching, versioning
-- Full logging, retry logic, error handling, triggers
-
-<blockquote>
-Automation, evolved.
-</blockquote>
+- **Kubernetes-native scheduling** with automatic retries and failure handling
+- **Secure, isolated execution** for Protected B data processing
+- **Comprehensive monitoring** with job history and status tracking
+- **Flexible scheduling** from simple daily runs to complex cron expressions
 
 ---
 
-<!-- Future: Kubernetes Is Built for Orchestration -->
-## Kubernetes Is Built for Orchestration
+<!-- Demo 1: CronJobs Use Cases -->
+## Demo 1: Production CronJobs
+
+![bg left:33%](./img/zone-8.png)
+
+**Perfect for:**
+
+- Automated data ingestion pipelines
+- Scheduled model retraining
+- Regular reporting and analytics
+- Data validation and quality checks
+
+> Reliable automation for production workloads
+
+---
+
+<!-- Demo 2: D3/JavaScript -->
+## Demo 2: Interactive Visualizations
 
 ![bg left:33%](./img/zone-9.png)
 
-At its core, **Kubernetes is designed to orchestrate workloads**: scaling, scheduling, and managing containers across clusters.
+**Rich, Interactive Dashboards**
 
-- Powers modern cloud-native apps
-- Handles complex workflows reliably
-- Already runs The Zone's notebooks and jobs
-
-<blockquote>
-Orchestration isn't the future.
-<br>
-It's already here, under the hood.
-</blockquote>
+- **D3.js integration** for advanced data visualization
+- **JavaScript execution** directly in Jupyter notebooks
+- **Interactive web applications** with real-time data
+- **Custom dashboard creation** without external tools
 
 ---
 
-<!-- Future: Kubeflow Brings Orchestration to Data Science -->
-## Kubeflow Brings Orchestration to Data Scientists
+<!-- Demo 2: D3/JavaScript Features -->
+## Demo 2: Interactive Visualizations
 
 ![bg left:33%](./img/zone-9.png)
 
-**Kubeflow was built for pipelines.** It brings Kubernetes' power to data scientists through an intuitive interface.
+**Powerful Features:**
 
-- The AAW had **Kubeflow Pipelines**, **Argo Workflows**
-- We can re-enable them, no reinvention needed, for end-to-end workflows: versioned, reproducible, monitored
+- Dynamic charts that respond to data changes
+- Real-time data streaming capabilities
+- Custom interactive visualizations
+- Web-based dashboard deployment
 
-<blockquote>
-We're not starting from scratch. We're restoring what works and making it secure, scalable, standard.
-</blockquote>
+> Create stunning visualizations without leaving the platform
 
 ---
 
-<!-- Data Access -->
-## Challenges Remain
+<!-- Demo 3: Standard Data Science -->
+## Demo 3: Python & R Workflows
+
+![bg left:33%](./img/zone-3.png)
+
+**Comprehensive Data Science Stack**
+
+**Python Ecosystem:**
+- **pandas** for data manipulation
+- **scikit-learn** for machine learning
+- **TensorFlow & PyTorch** for deep learning
+- **matplotlib & seaborn** for visualization
+
+---
+
+<!-- Demo 3: Standard Data Science Continued -->
+## Demo 3: Python & R Workflows
+
+![bg left:33%](./img/zone-3.png)
+
+**R Ecosystem:**
+- **tidyverse** for data wrangling
+- **ggplot2** for advanced graphics
+- **shiny** for interactive apps
+- **caret & tidymodels** for ML
+
+**Unified Environment:**
+- Shared data between languages, integrated package management, version control integration
+
+---
+
+<!-- Demo 4: SAS Integration -->
+## Demo 4: SAS Coexistence & Migration
+
+![bg left:33%](./img/zone-3.png)
+
+**Bridging Traditional and Modern**
+
+- **Native SAS execution** alongside Python and R
+- **Gradual migration path** for existing SAS workflows
+- **Side-by-side code comparison** and validation
+- **Automated conversion tools** for common SAS patterns
+
+---
+
+<!-- Demo 4: SAS Migration Support -->
+## Demo 4: SAS Coexistence & Migration
+
+![bg left:33%](./img/zone-3.png)
+
+**Migration Support:**
+
+- SAS procedures to Python/R equivalents
+- DATA step transformations to pandas/tidyverse
+- Statistical analysis cross-validation
+- Performance benchmarking between languages
+
+> Your SAS investment is safe while you modernize
+
+---
+
+<!-- Platform Architecture -->
+## Technical Foundation
+
+![bg left:33%](./img/zone-1.png)
+
+**Built on Enterprise-Grade Stack**
+
+- **Kubernetes** for container orchestration at scale
+- **Kubeflow** for end-to-end ML workflows
+- **Azure AKS** with cloud-agnostic design
+- **Protected B compliance** built-in
+- **Multi-language runtime** support
+
+---
+
+<!-- Platform Architecture Continued -->
+## Scalability & Performance
+
+![bg left:33%](./img/zone-1.png)
+
+**Scalability Features:**
+
+- Automatic resource scaling based on demand
+- GPU acceleration for deep learning workloads
+- Distributed computing capabilities
+- High availability and fault tolerance
+
+> The same platform that powers modern tech companies,
+> tailored for government security needs.
+
+---
+
+<!-- Future Roadmap -->
+## What's Next?
 
 ![bg left:33%](./img/zone-9.png)
 
-- Database connections (workload intake forms)
-- Legacy filer performance (data migration)
-- Linux and Kubernetes concepts (education)
-- Secrets management (Keycloak)
-- VS Code extension repo (org wide)
+**Pipeline Orchestration & Beyond**
 
-<blockquote>
-We're solving these, with your feedback.
-</blockquote>
+- **Kubeflow Pipelines** for complex, reproducible workflows
+- **Enhanced monitoring** with real-time dashboards
+- **Expanded database connectors** for enterprise data sources
+- **Performance optimizations** for large-scale data processing
 
 ---
 
-<!-- Portability & Federated Future -->
-## A Federated Future
+<!-- Future Roadmap Continued -->
+## Coming Soon
 
-![bg left:33%](./img/zone-10.png)
+![bg left:33%](./img/zone-9.png)
 
-The Zone is open source and designed to scale. It can be deployed by:
+**Upcoming Features:**
 
-- Other teams at StatCan
-- Federal departments
-- Provincial and municipal governments
+- Automated ML model deployment
+- Real-time inference capabilities
+- Collaborative data science features
+- Enhanced security and compliance tools
 
-<blockquote>
-Same foundation. Same security.
-<br>
-Deployed where you need it.
-</blockquote>
+> We're building the future of data science at StatCan,
+> one feature at a time.
 
 ---
 
 <!-- Call to Action -->
-## Enter The Zone
+## Join The Zone
 
 ![bg left:33%](./img/zone-10.png)
 
-You are invited to:
+**You're Invited To:**
 
 - Access the platform: https://zone.statcan.ca
-- Attend training and workshops
-- Help shape the future of data science at StatCan
-- Host the next Zone in your department
+- Attend our training sessions and workshops
+- Migrate your SAS workflows gradually
+- Deploy production CronJobs
+- Build interactive dashboards
 
-<blockquote>
-The Zone is a movement toward openness, sovereignty,
-<br>
-and shared capability.
-</blockquote>
+> The platform is ready. The community is growing.
+> Your data science journey starts here.
+
+---
+
+<!-- Contact & Resources -->
+## Get Started Today
+
+![bg left:33%](./img/zone-10.png)
+
+**Resources & Support**
+
+- **Platform**: https://zone.statcan.ca
+- **Documentation**: Comprehensive guides available
+- **Training**: Regular workshops and office hours
+- **Support**: Zone team support channel
+
+> We're here to help you succeed in The Zone.
+> Reach out anytime!
